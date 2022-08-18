@@ -12,10 +12,9 @@ export const Container = styled.div`
 
   .button-menu {
     border: none;
-    z-index: 2;
+    z-index: 3;
   }
 
-  
   ul li button {
     width: 8.5rem;
     span {
@@ -30,10 +29,11 @@ export const Container = styled.div`
     position: absolute;
     top: 0px;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
     width: 100vw;
     height: 100vh;
+    animation: topdown 500ms;
     
     ul {
       display: flex;
@@ -46,7 +46,6 @@ export const Container = styled.div`
   
   .menu.inactive {
     display: none;
-
   }
   
   @media (min-width: 800px) {
