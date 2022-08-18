@@ -1,18 +1,11 @@
 import styled from "styled-components";
+import cloudsImg from "../../assets/clouds.svg"
 import bgImg from "../../assets/bg.svg"
 
 export const Container = styled.div`
-  height: 100vh;
-  width: 100%;
   background-image: url(${bgImg});
   background-repeat: repeat;
-
-  display: grid;
-  grid-template-rows: 55px auto 60px;
-  grid-template-areas:
-  "header"
-  "content"
-  "footer";
+  background-position: center;
 `
 
 export const Main = styled.main`
@@ -21,6 +14,12 @@ export const Main = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 6rem;
+
+  @media (max-width: 1000px) {
+    gap: 3rem;
+  }
+
 `
 
 export const PopUp = styled.div`
@@ -97,6 +96,10 @@ export const PopUp = styled.div`
     width: 7rem;
    }
 
+   @media (max-width: 950px) {
+    margin: 0 3rem;
+  }
+
 `
 
 export const Header = styled.div`
@@ -116,4 +119,39 @@ export const Header = styled.div`
       visibility: hidden;
     }
    }
+`
+
+export const Background = styled.div`
+  position: relative;
+  display: flex;
+
+  div {
+    flex: 1;
+    width: 52.4rem;
+    height: 48.8rem;
+    background: url(${cloudsImg}) no-repeat;
+    background-size: clamp(35rem, 35rem + 10vw, 45rem);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img.gif {
+      width: clamp(30rem, 30rem + 10vw, 45rem);
+      height: clamp(30rem, 30rem + 10vw, 45rem);
+    }
+    
+    img.smile {
+      position: absolute;
+      right: 20px;
+      top: 35px;
+      width: clamp(12rem, 12rem + 10vw, 16rem);
+      height: clamp(12rem, 12rem + 10vw, 16rem);
+    }
+  }
+
+  @media (max-width: 930px) {
+    display: none;
+  }
+
 `

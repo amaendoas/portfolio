@@ -21,14 +21,16 @@ export default createGlobalStyle`
     font-family: 'JetBrains Mono', monospace;
   }
 
-  button, a {
+  button {
     font-family: 'JetBrains Mono', monospace;
     cursor: pointer;
+    border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
+    background-color: transparent;
   }
 
-  button {
-    background: none;
-    border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
+  a {
+    text-decoration: none;
+    cursor: pointer;
   }
 
   ul {

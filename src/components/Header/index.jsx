@@ -1,39 +1,50 @@
 import * as C from "./styles"
 import menu from "../../assets/menu.svg"
 import { PinkButton } from "../PinkButton"
-import { useRef, useState } from "react"
+import { useState } from "react"
 import close from "../../assets/x.svg"
+import { Link } from "react-router-dom"
 
 
 export function Header() {
-  const dropDownRef = useRef(null)
   const [isActive, setIsActive] = useState(false)
 
   return(
     <C.Container>
-      <PinkButton title="a"/>
+      <Link to="/">
+        <PinkButton title="amaendoas" className="logo"/>
+      </Link>
       <button onClick={() => setIsActive(!isActive)} className="button-menu">
       <img src={`${isActive ? close : menu}`} alt="menu" />
       </button>
       <nav
-      ref={dropDownRef}
-      className={`menu ${isActive ? "active" : "inactive"}`}
+      className={`menu navbar ${isActive ? "active" : "inactive"}`}
       >
         <ul>
           <li>
-          <PinkButton title="home"/>
+            <Link to="/">
+              <PinkButton title="home"/>
+            </Link>
           </li>
           <li>
-            <PinkButton title="about"/>
+          <Link to="/about">
+              <PinkButton title="about"/>
+            </Link>
           </li>
           <li>
-            <PinkButton title="stack"/>
+            <Link to="/stack">
+              <PinkButton title="stack"/>
+            </Link>
           </li>
           <li>
-            <PinkButton title="projects"/>
+            <Link to="/projects">
+              <PinkButton title="projects"/>
+            </Link>
           </li>
           <li>
-            <PinkButton title="contact"/>
+            <Link to="/contact">
+              <PinkButton title="contact"/>
+            </Link>
           </li>
         </ul>
       </nav>

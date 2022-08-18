@@ -1,23 +1,23 @@
-<svg width="343" height="472" viewBox="0 0 343 472" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 16V472" stroke="white"/>
-<path d="M57 16V472" stroke="white"/>
-<path d="M95 16V472" stroke="white"/>
-<path d="M133 16V472" stroke="white"/>
-<path d="M171 16V472" stroke="white"/>
-<path d="M209 16V472" stroke="white"/>
-<path d="M247 16V472" stroke="white"/>
-<path d="M285 16V472" stroke="white"/>
-<path d="M323 16V472" stroke="white"/>
-<path d="M0 453H342" stroke="white"/>
-<path d="M0 415H342" stroke="white"/>
-<path d="M0 377H342" stroke="white"/>
-<path d="M0 339H342" stroke="white"/>
-<path d="M0 301H342" stroke="white"/>
-<path d="M0 263H342" stroke="white"/>
-<path d="M0 225L342 225" stroke="white"/>
-<path d="M0 187L342 187" stroke="white"/>
-<path d="M0 149L342 149" stroke="white"/>
-<path d="M0 111L342 111" stroke="white"/>
-<path d="M0 73L342 73" stroke="white"/>
-<path d="M0 35L342 35" stroke="white"/>
+<svg width="343" height="456" viewBox="0 0 343 456" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 0V456" stroke="white"/>
+<path d="M57 0V456" stroke="white"/>
+<path d="M95 0V456" stroke="white"/>
+<path d="M133 0V456" stroke="white"/>
+<path d="M171 0V456" stroke="white"/>
+<path d="M209 0V456" stroke="white"/>
+<path d="M247 0V456" stroke="white"/>
+<path d="M285 0V456" stroke="white"/>
+<path d="M323 0V456" stroke="white"/>
+<path d="M0 437H342" stroke="white"/>
+<path d="M0 399H342" stroke="white"/>
+<path d="M0 361H342" stroke="white"/>
+<path d="M0 323H342" stroke="white"/>
+<path d="M0 285H342" stroke="white"/>
+<path d="M0 247L342 247" stroke="white"/>
+<path d="M0 209L342 209" stroke="white"/>
+<path d="M0 171L342 171" stroke="white"/>
+<path d="M0 133L342 133" stroke="white"/>
+<path d="M0 95L342 95" stroke="white"/>
+<path d="M0 57L342 57" stroke="white"/>
+<path d="M0 19L342 19" stroke="white"/>
 </svg>

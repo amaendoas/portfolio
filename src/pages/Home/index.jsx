@@ -1,18 +1,18 @@
 import { Button } from "../../components/Button"
-import { Footer } from "../../components/Footer"
-import { Header } from "../../components/Header"
+import { Theme } from "../../components/Theme"
 import * as C from "./styles"
 import download from "../../assets/download.svg"
 import heart from "../../assets/home-heart.svg"
 import stars from "../../assets/stars.svg"
 import star3 from "../../assets/star-3.svg"
 import star11 from "../../assets/star-11.svg"
+import smile from "../../assets/smile-baloon.svg"
 
 
 export function Home() {
   return(
+    <Theme>
     <C.Container>
-      <Header/>
       <C.Main>
         <C.PopUp>
           <img src={heart} alt="heart" className="heart1" />
@@ -30,8 +30,14 @@ export function Home() {
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eget tincidunt libero. orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
              <Button icon={download} title="download resume"/>
         </C.PopUp>
+      <C.Background>
+        <div>
+          <img src={smile} alt="smile ballon" className="smile"/>
+          <img src="https://media.giphy.com/media/4XXo8A7CIW1lZGgdhm/giphy.gif" alt="woman coding" className="gif"/>
+        </div>
+      </C.Background>
       </C.Main>
-      <Footer/>
-    </C.Container>
+    </C.Container>          
+    </Theme>
   )
 }

@@ -8,7 +8,7 @@ export const Container = styled.button`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   color: ${({ theme }) => theme.COLORS.TEXT};
   box-shadow: 3px 5px 0px ${({ theme }) => theme.COLORS.PINK_P};
-  font-size: 2.1rem;
+  font-size: 2rem;
   line-height: 21px;
   cursor: pointer;
 

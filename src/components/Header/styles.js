@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   grid-area: header;
+  height: 100%;
   background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
   display: flex;
   align-items: center;
@@ -14,13 +15,14 @@ export const Container = styled.div`
     z-index: 2;
   }
 
+  
   ul li button {
     width: 8.5rem;
     span {
       display: none;
     }
   }
-
+  
   .menu.active {
     display: flex;
     justify-content: center;
@@ -32,17 +34,35 @@ export const Container = styled.div`
     background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
     width: 100vw;
     height: 100vh;
-
+    
     ul {
       display: flex;
       flex-direction: column;
       gap: 4rem;
       align-items: center;
     }
-
+    
   }
-
+  
   .menu.inactive {
-     display: none;
+    display: none;
+
   }
+  
+  @media (min-width: 800px) {
+
+    .button-menu {
+      display: none;
+    }
+
+    .menu.inactive {
+      display: flex;
+
+      ul {
+        display: flex;
+        gap: 3rem;
+      }
+    }
+  }
+
 `
