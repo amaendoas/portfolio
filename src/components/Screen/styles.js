@@ -20,7 +20,7 @@ export const Container = styled.div`
     margin-top: 8px;
    }
 
-   @media (min-width: 900px) {
+   @media (min-width: 800px) {
     width: 40rem;
    }
 `

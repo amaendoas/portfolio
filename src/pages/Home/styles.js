@@ -96,7 +96,7 @@ export const PopUp = styled.div`
     margin: 0 3rem;
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 800px) {
     width: 40rem;
 
     h1 {
@@ -153,6 +153,18 @@ export const Background = styled.div`
 
   @media (max-width: 930px) {
     display: none;
+  }
+
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    to {
+      visibility: hidden;
+    }
   }
 
 `

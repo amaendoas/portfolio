@@ -64,4 +64,14 @@ export const Container = styled.div`
     }
   }
 
+  @keyframes topdown {
+    0% {
+      transform: translateY(-500px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 `
