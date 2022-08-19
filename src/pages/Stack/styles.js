@@ -61,7 +61,7 @@ export const Container = styled.div`
   }
 
   .rec-item-wrapper {
-    width: 26rem !important;
+    width: 27rem !important;
   }
 
   .smile, .heart {
@@ -71,22 +71,22 @@ export const Container = styled.div`
   .smile {
     top: -2rem;
     right: 0;
-    z-index: 2;
+    z-index: 1;
   }
 
   .heart {
     bottom: 3.5rem;
     left: 2rem;
-    z-index: 2;
+    z-index: 1;
   }
 
   @media (min-width: 800px) {
     .carousel-wrapper {
-      width: 60rem;
+      width: 58rem;
     }
 
     .rec-carousel {
-      width: 58rem;
+      width: 60rem;
     }
   }
 
@@ -95,7 +95,7 @@ export const Container = styled.div`
       width: 90rem;
     }
     .rec-carousel {
-      width: 84rem;
+      width: 88rem;
     }
 
     .smile {
