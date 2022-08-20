@@ -6,6 +6,7 @@ export const Container = styled.div`
   box-shadow: 3px 5px 0px ${({ theme }) => theme.COLORS.YELLOW_P};
   border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
   margin-left: 2rem;
+  margin-top: 3rem;
 
   h1 {
     font-size: 2.7rem;

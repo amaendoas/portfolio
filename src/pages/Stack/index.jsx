@@ -29,15 +29,18 @@ export function Stack() {
     <Theme>
     <C.Container>
       <Title title="Stack"/>
-      <div className="carousel-wrapper">
-      <img src={star} alt="star-smile" className="smile" />
-      <img src={heart} alt="heart" className="heart"/>
-        <Carousel breakPoints={breakPoints}>
-            {items.map((item) => (
-              <StackItem title={item.title} icon={item.icon} color={item.color} value={item.value}/>
-              ))}
-        </Carousel>
-      </div>
+
+      <C.Content>
+        <div className="carousel-wrapper">
+          <img src={star} alt="star-smile" className="smile" />
+          <img src={heart} alt="heart" className="heart"/>
+          <Carousel breakPoints={breakPoints}>
+              {items.map((item) => (
+                <StackItem key={item.id} title={item.title} icon={item.icon} color={item.color} value={item.value}/>
+                ))}
+          </Carousel>
+        </div>
+      </C.Content>
     </C.Container>
     </Theme>
   )
