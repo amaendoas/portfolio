@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: 25rem;
   background-color: ${({theme}) => theme.COLORS.GREEN_S};
   border: 1px solid ${({theme}) => theme.COLORS.TEXT};
-  box-shadow: -4px 4px 0px ${({theme}) => theme.COLORS.TEXT};
+  box-shadow: 4px 4px 0px ${({theme}) => theme.COLORS.TEXT};
   display: flex;
   flex-direction: column;
   align-items: center;

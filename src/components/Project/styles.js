@@ -68,7 +68,7 @@ export const Content = styled.div`
         margin-top: 1rem;
         object-fit: cover;
         width: 100%;
-        height: 12rem;
+        height: 15rem;
         background: ${({theme}) => theme.COLORS.NEUTRAL_700};
         box-shadow: inset 0px 0px 20px 3px rgba(0, 0, 0, 0.20);
         border: 1px solid ${({theme}) => theme.COLORS.TEXT};

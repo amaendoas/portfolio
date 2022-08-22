@@ -1,4 +1,63 @@
 import styled from "styled-components";
+import bg from "../../assets/bg-confetti.svg"
 
 export const Container = styled.div`
+  background-image: url(${bg});
+  
+  .title {
+    background-color: ${({theme}) => theme.COLORS.GREEN_S};
+  }
+`
+
+export const Content = styled.div`
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img.clouds {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    width: 12rem;
+    height: 7rem;
+  }
+
+  img.balloon {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    background-color: ${({ theme }) => theme.COLORS.PINK_S};
+  }
+
+  button:hover {
+    background-color: ${({ theme }) => theme.COLORS.PINK_P};
+  }
+
+  @media (min-width: 800px) {
+    img.balloon{
+      display: block;
+      position: absolute;
+      bottom: -6rem;
+      left: -7rem;
+    }
+
+    img.clouds {
+    top: -5rem;
+    right: -5rem;
+    width: 14rem;
+    height: 9rem;
+    }
+  }
 `

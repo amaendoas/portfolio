@@ -9,7 +9,7 @@ export function Screen({children}) {
         <div className="dot"></div>
       </C.Header>
       <div className="line"></div>
-      <C.Content>
+      <C.Content className="content">
         {children}
       </C.Content>
     </C.Container>

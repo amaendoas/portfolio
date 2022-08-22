@@ -28,6 +28,26 @@ export default createGlobalStyle`
     background-color: transparent;
   }
 
+  input, textarea {
+    font-family: 'JetBrains Mono', monospace;
+    width: 100%;
+    background-color: ${({theme}) => theme.COLORS.NEUTRAL_700};
+    border: none;
+    border-bottom: 3px solid ${({theme}) => theme.COLORS.TEXT};
+    margin-top: 1.2rem;
+    padding: 1rem;
+  }
+  
+  input {
+    width: 100%;
+    height: 4rem;
+  }
+
+  textarea {
+    resize: none;
+    height: 10rem;
+  }
+
   a {
     text-decoration: none;
     cursor: pointer;

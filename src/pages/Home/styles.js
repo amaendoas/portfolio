@@ -19,20 +19,10 @@ export const Main = styled.main`
   @media (max-width: 1000px) {
     gap: 3rem;
   }
-
-  .screen {
-    box-shadow: -10px 10px 0px ${({ theme }) => theme.COLORS.PURPLE_P};
-    border: 2px solid ${({theme}) => theme.COLORS.PURPLE_P};
-
-    .line {
-    background-color: ${({theme}) => theme.COLORS.PURPLE_P};
-   }
-
-   .dot {
-    border: 4px solid ${({theme}) => theme.COLORS.PURPLE_P};
-   }
-  }
 `
+
+export const Content = styled.div`
+` 
 
 export const PopUp = styled.div`
   display: flex;

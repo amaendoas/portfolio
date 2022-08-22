@@ -6,6 +6,7 @@ export const Container = styled.div`
   border: 2px solid ${({theme}) => theme.COLORS.TEXT};
   border-radius: 10px;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
+  box-shadow: 6px 6px 0px ${({ theme }) => theme.COLORS.TEXT};
   padding: 1rem 0;
   display: flex;
   flex-direction: column;

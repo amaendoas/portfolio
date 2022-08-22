@@ -9,9 +9,10 @@ export const Container = styled.button`
   align-items: center;
   gap: 5px;
   margin: 10px 0;
-  padding: 0 8px;
+  padding: 0 17px 0 8px;
   cursor: pointer;
   background-color: ${({ theme }) => theme.COLORS.BLUE_S};
+  box-shadow: 3px 5px 0px ${({ theme }) => theme.COLORS.TEXT};
 
   @media (min-width: 801px) {
     height: 4rem;
@@ -25,18 +26,7 @@ export const Container = styled.button`
 
 
   :hover {
-    animation: buttonB 400ms forwards;
+    animation: buttonD 400ms forwards;
     background-color: ${({ theme }) => theme.COLORS.BLUE_P};
-  }
-
-  @keyframes buttonB {
-    0% {
-      transform: translate(0,0);
-    }
-
-    100% {
-      box-shadow: 3px 5px 0px ${({ theme }) => theme.COLORS.TEXT};
-      transform: translate(-5px, -3px);
-    }
   }
 `

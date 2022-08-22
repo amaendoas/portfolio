@@ -32,7 +32,7 @@ export const Container = styled.div`
     justify-content: center;
   }
 
-  .iyZTLA:hover:enabled, .iyZTLA:focus {
+  .rec-arrow:hover:enabled, .rec-arrow:focus {
     color: ${({theme}) => theme.COLORS.TEXT};
     background-color: transparent;
     box-shadow: 0 0 2px 0 ${({theme}) => theme.COLORS.TEXT};

@@ -4,7 +4,7 @@ import { BsGithub } from "react-icons/bs"
 import { useState } from "react"
 
 export function Project({id, title, img, tag, description, github}) {
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(true)
 
   function ShowHide() {
     setIsActive(!isActive)
