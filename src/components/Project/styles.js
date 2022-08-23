@@ -12,9 +12,10 @@ export const Container = styled.div`
   p {
     width: 100%;
     font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     text-align: justify;
+    margin-top: 1rem;
   }
   .content.inactive {
     display: none;
@@ -58,29 +59,54 @@ export const Title = styled.div`
 `
 
 export const Content = styled.div`
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-  
-      img {
-        margin-top: 1rem;
-        object-fit: cover;
-        width: 100%;
-        height: 15rem;
-        background: ${({theme}) => theme.COLORS.NEUTRAL_700};
-        box-shadow: inset 0px 0px 20px 3px rgba(0, 0, 0, 0.20);
-        border: 1px solid ${({theme}) => theme.COLORS.TEXT};
-      }                         
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;                    
 `
 
 export const Footer = styled.div`
   display: flex;
   width: 100%;
   justify-content: start;
+`
 
-  svg {
+export const Tags = styled.div`
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+`
+
+export const Links = styled.div`
+  display: flex;
+   svg {
     color: ${({theme}) => theme.COLORS.PINK_P};
+    transition: 0.3s;
+  }
+
+  a {
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a:hover {
+    span {
+      color: ${({theme}) => theme.COLORS.PURPLE_P};
+      transition: 0.3s;
+    }
+    svg {
+      color: ${({theme}) => theme.COLORS.PURPLE_P};
+      transition: 0.3s;
+    }
+  }
+
+  span {
+    color: ${({theme}) => theme.COLORS.PINK_P};
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 1.1rem;
   }
 `

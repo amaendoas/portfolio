@@ -27,10 +27,11 @@ export function Home() {
               <img src={star11} alt="" className="star11"/>
                 <h1>HELLO WORLD!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eget tincidunt libero. orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <Button icon={download} title="download resume"/>
+                <a href="https://onedrive.live.com/download?cid=E58EE0AD0FE243C0&resid=E58EE0AD0FE243C0%2141570&authkey=AOv9-N4AogZvtTA&em=2">
+                <Button icon={download} title="baixar currículo"/>
+                </a>
             </C.PopUp>
           </Screen>
-          <Social/>
         </C.Content>
       <C.Background>
         <div>

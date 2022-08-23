@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import bg from "../../assets/bg-confetti.svg"
+
 
 export const Container = styled.div`
-  background-image: url(${bg});
   
   .title {
     background-color: ${({theme}) => theme.COLORS.GREEN_S};
@@ -60,4 +59,12 @@ export const Content = styled.div`
     height: 9rem;
     }
   }
+`
+
+export const Form = styled.form`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `

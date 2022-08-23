@@ -7,6 +7,7 @@ export const Container = styled.div`
   border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
   margin-left: 2rem;
   margin-top: 3rem;
+  animation: downtop 1s backwards;
 
   h1 {
     font-size: 2.7rem;

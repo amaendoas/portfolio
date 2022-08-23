@@ -21,6 +21,7 @@ export function Projects() {
        img={project.img}
        description={project.description}
        github={project.github}
+       live={project.live}
        tag={(project.tags.map((tag, index) =>
         <Tag
         key={index}

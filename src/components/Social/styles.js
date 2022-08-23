@@ -11,6 +11,7 @@ export const Container = styled.div`
   margin-top: 10px;
   width: 100%;
   animation: downtop 1s backwards;
+
   
   svg {
     font-size: 2.2rem;
