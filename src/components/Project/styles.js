@@ -13,7 +13,7 @@ export const Container = styled.div`
     width: 100%;
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 1.6rem;
+    line-height: 1.7rem;
     text-align: justify;
     margin-top: 1rem;
   }
@@ -63,12 +63,13 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;                    
+  gap: 1rem;                    
 `
 
 export const Footer = styled.div`
   display: flex;
   width: 100%;
+  align-items: center;
   justify-content: start;
 `
 
@@ -85,8 +86,11 @@ export const Links = styled.div`
     transition: 0.3s;
   }
 
-  a {
+  a:nth-child(1) {
     margin-right: 8px;
+  }
+
+  a {
     display: flex;
     flex-direction: column;
     align-items: center;

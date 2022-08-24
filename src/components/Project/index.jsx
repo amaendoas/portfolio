@@ -3,8 +3,9 @@ import { MdOutlineKeyboardArrowUp, MdOutlineKeyboardArrowDown } from "react-icon
 import { BsGithub } from "react-icons/bs"
 import { MdLanguage } from "react-icons/md"
 import { useState } from "react"
+import { Status } from "../Status/index.jsx"
 
-export function Project({id, title, tag, description, github, live}) {
+export function Project({id, title, tag, description, github, live, status, finished}) {
   const [isActive, setIsActive] = useState(true)
 
   function ShowHide() {
@@ -28,6 +29,7 @@ export function Project({id, title, tag, description, github, live}) {
           <p>
           {description}
           </p>
+          <Status status={status} finished={finished}/>
           <C.Footer>
             <C.Tags>
             {tag}

@@ -9,7 +9,6 @@ import star11 from "../../assets/star-11.svg"
 import smile from "../../assets/smile-baloon.svg"
 import { Screen } from "../../components/Screen"
 import coding from "../../assets/coding.gif"
-import { Social } from "../../components/Social"
 
 
 export function Home() {
@@ -27,7 +26,7 @@ export function Home() {
               <img src={star11} alt="" className="star11"/>
                 <h1>HELLO WORLD!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eget tincidunt libero. orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="https://onedrive.live.com/download?cid=E58EE0AD0FE243C0&resid=E58EE0AD0FE243C0%2141570&authkey=AOv9-N4AogZvtTA&em=2">
+                <a href="https://drive.google.com/uc?export=download&id=1hRxNoNwJAkuSC5FynTUe-fzcr76WhIQG">
                 <Button icon={download} title="baixar currículo"/>
                 </a>
             </C.PopUp>

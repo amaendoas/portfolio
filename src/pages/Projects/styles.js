@@ -11,6 +11,7 @@ export const Container = styled.div`
 `
 export const Content = styled.div`
   display: flex;
+  padding-bottom: 1rem;
   max-width: 130rem;
   margin: 0 auto;
   flex-wrap: wrap;

@@ -1,4 +1,4 @@
-import { SiReact, SiSqlite, SiTypescript, SiNodedotjs, SiJavascript, SiHtml5, SiCss3 } from "react-icons/si"
+import { SiReact, SiSqlite, SiTypescript, SiNodedotjs, SiJavascript, SiHtml5, SiCss3, SiFigma } from "react-icons/si"
 
 export const stack = [
   {id: 1, title: 'html', icon: SiHtml5, value: 4, color: '#E34F26'},
@@ -7,5 +7,6 @@ export const stack = [
   {id: 4, title: 'reactjs', icon: SiReact, value: 3, color: '#61DAFB'},
   {id: 5, title: 'nodejs', icon: SiNodedotjs, value: 3, color: '#339933'},
   {id: 6, title: 'sqlite', icon: SiSqlite, value: 2, color: '#003B57'},
-  {id: 7, title: 'typescript', icon: SiTypescript, value: 2, color: '#3178C6'}
+  {id: 7, title: 'typescript', icon: SiTypescript, value: 2, color: '#3178C6'},
+  {id: 8, title: 'figma', icon: SiFigma, value: 3, color: '#F24E1E'}
 ]

@@ -22,5 +22,9 @@ export default {
     PINK_P: "#F28B9D",
     PINK_S: "#F8B7C2",
 
+    RED: "#AB222E",
+    ORANGE: "#FBA94C",
+    GREEN: "#04D361"
+
   }
 }
