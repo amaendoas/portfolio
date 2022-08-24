@@ -15,10 +15,22 @@ export const Container = styled.div`
     z-index: 3;
   }
 
+  .logo {
+    box-shadow: 4px 4px 0px ${({ theme }) => theme.COLORS.PINK_P};
+  }
+
   ul li button {
-    width: 8.5rem;
+    width: 11rem;
     span {
-      display: none;
+      opacity: 0;
+    }
+  }
+  
+  ul li button:hover {
+    border: 1px solid ${({ theme }) => theme.COLORS.PINK_P};
+    span {
+      transition: 0.5s;
+      opacity: 1;
     }
   }
   

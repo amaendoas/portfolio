@@ -26,4 +26,14 @@ export const Container = styled.div `
     }
   }
 
+  @keyframes buttonD {
+    0% {
+      transform: translate(0,0);
+    }
+
+    100% {
+      box-shadow: 4px 4px 0px ${({ theme }) => theme.COLORS.TEXT};
+      transform: translate(-4px, -4px);
+    }
+  }
 `

@@ -3,7 +3,7 @@ import menu from "../../assets/menu.svg"
 import { PinkButton } from "../PinkButton"
 import { useState } from "react"
 import close from "../../assets/x.svg"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 
 export function Header() {
@@ -11,8 +11,8 @@ export function Header() {
 
   return(
     <C.Container>
-      <Link to="/">
-        <PinkButton title="amaendoas" className="logo"/>
+      <Link to="/" className="logo">
+        <PinkButton title="amaendoas" path="/"/>
       </Link>
       <button onClick={() => setIsActive(!isActive)} className="button-menu">
       <img src={`${isActive ? close : menu}`} alt="menu" />
@@ -22,28 +22,23 @@ export function Header() {
       >
         <ul>
           <li>
-            <Link to="/">
-              <PinkButton title="home"/>
-            </Link>
-          </li>
-          <li>
-          <Link to="/about">
-              <PinkButton title="about"/>
-            </Link>
+            <NavLink to="/about">
+              <PinkButton title="about" path="/about"/>
+            </NavLink>
           </li>
           <li>
             <Link to="/stack">
-              <PinkButton title="stack"/>
+              <PinkButton title="stack" path="/stack"/>
             </Link>
           </li>
           <li>
-            <Link to="/projects">
+            <Link to="/projects" path="/projects">
               <PinkButton title="projects"/>
             </Link>
           </li>
           <li>
             <Link to="/contact">
-              <PinkButton title="contact"/>
+              <PinkButton title="contact" path="/contact"/>
             </Link>
           </li>
         </ul>

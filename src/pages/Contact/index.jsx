@@ -6,7 +6,6 @@ import { Button } from "../../components/Button"
 import send from "../../assets/send.svg"
 import clouds from "../../assets/3-clouds.svg"
 import balloon from "../../assets/say-hi.svg"
-import { Social } from "../../components/Social"
 import React, { useRef } from "react"
 import emailjs from '@emailjs/browser'
 
@@ -51,7 +50,6 @@ export function Contact() {
             <Button icon={send} title="send" onCLick={sendEmail}/>
           </C.Form>
         </Screen>
-        <Social/>
       </C.Content>
     </C.Container>
     </Theme>
