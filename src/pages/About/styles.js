@@ -15,12 +15,13 @@ export const Container = styled.div`
   @media (min-width: 1000px) {
     gap: 10rem;
   }
+  overflow-y: auto;
 `
 
 export const Image = styled.div`
   margin-top: 7rem;
   width: 30rem;
-  height: 20rem;
+  height: 18rem;
   background-image: url(${myPhoto});
   background-size: cover;
   background-position: center;
@@ -29,7 +30,7 @@ export const Image = styled.div`
   div {
     position: absolute;
     right: 35px;
-    top: -70px;
+    top: -75px;
 
     img.tag {
       position: relative;
@@ -38,7 +39,7 @@ export const Image = styled.div`
     p {
       position: absolute;
       z-index: 1;
-      width: 9.5rem;
+      width: 9rem;
       font-weight: 800;
       font-size: 1.7rem;
       line-height: 18px;
@@ -57,7 +58,7 @@ export const Image = styled.div`
   .balloon {
     position: absolute;
     left: 25px;
-    top: -70px;
+    top: -75px;
     z-index: 1;
   }
 
@@ -111,12 +112,16 @@ export const AboutMe = styled.div`
     padding: 1rem 1rem 0;
   }
 
-   p {
+   .description {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.8rem;
     padding: 1rem;
     text-align: justify;
+
+    p {
+      margin-bottom: 5px;
+    }
    }
 
    img.balls {
@@ -153,10 +158,14 @@ export const AboutMe = styled.div`
     padding: 2rem 2rem 0;
   }
 
-   p {
+  .description {
     font-size: 1.6rem;
     line-height: 2rem;
     padding: 2rem 2rem 5rem;
-   }
+    
+    p {
+      margin-bottom: 1rem;
+    }
+  }
   }
 `

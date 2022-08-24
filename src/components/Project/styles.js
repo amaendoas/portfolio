@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 34rem;
-  height: fit-content;
   background-color: ${({theme}) => theme.COLORS.BACKGROUND};
   padding: 1.3rem 2rem;
   border: 1px solid ${({theme}) => theme.COLORS.TEXT};
   box-shadow: 4px 4px 0px ${({theme}) => theme.COLORS.TEXT};
   border-radius: 10px;
-
+  
   p {
     width: 100%;
     font-weight: 400;
@@ -17,8 +16,13 @@ export const Container = styled.div`
     text-align: justify;
     margin-top: 1rem;
   }
+
+  .active {
+    height: 22.5rem;
+  }
   .content.inactive {
     display: none;
+    height: fit-content;
   }
 `
 
@@ -60,14 +64,17 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   display: flex;
+  height: 100%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;                    
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 1rem;
 `
 
 export const Footer = styled.div`
   display: flex;
+  gap: 8px;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: start;
@@ -75,22 +82,29 @@ export const Footer = styled.div`
 
 export const Tags = styled.div`
  display: flex;
+ gap: 8px;
  flex-wrap: wrap;
  align-items: center;
-`
+ justify-content: space-between;
+ width: 100%;
+ `
 
 export const Links = styled.div`
+  width: 100%;
   display: flex;
-   svg {
-    color: ${({theme}) => theme.COLORS.PINK_P};
-    transition: 0.3s;
-  }
-
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
   a:nth-child(1) {
     margin-right: 8px;
   }
-
+  
   a {
+    svg {
+     color: ${({theme}) => theme.COLORS.PINK_P};
+     transition: 0.3s;
+   }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,11 +120,22 @@ export const Links = styled.div`
       transition: 0.3s;
     }
   }
+`
 
-  span {
-    color: ${({theme}) => theme.COLORS.PINK_P};
-    transition: 0.3s;
+export const Info = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  p {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  svg.time {
+    font-size: 1.4rem;
   }
 `

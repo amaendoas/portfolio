@@ -7,13 +7,14 @@ import more from "../../assets/more.svg"
 import { projects } from "../../utils/projects"
 
 export function Projects() {
+  const projectsItems = projects.reverse()
 
   return (
     <Theme>
     <C.Container>
       <Title title="Projects"/>
       <C.Content>
-       {projects.map((project) =>
+       {projectsItems.map((project) =>
        <Project
        key={project.id}
        id={project.id}
@@ -24,6 +25,7 @@ export function Projects() {
        live={project.live}
        status={project.status}
        finished={project.finished}
+       date={project.date}
        tag={(project.tags.map((tag, index) =>
         <Tag
         key={index}

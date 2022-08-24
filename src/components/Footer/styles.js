@@ -6,18 +6,15 @@ export const Container = styled.div`
   font-size: 1.2rem;
   border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
   background-color: ${({ theme }) => theme.COLORS.PINK_S};
-  padding: 0 6rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   `
 
 export const Credits = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
-`
-export const Social = styled.div`
 `

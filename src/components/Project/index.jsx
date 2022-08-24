@@ -4,8 +4,9 @@ import { BsGithub } from "react-icons/bs"
 import { MdLanguage } from "react-icons/md"
 import { useState } from "react"
 import { Status } from "../Status/index.jsx"
+import { MdOutlineAccessTime } from "react-icons/md"
 
-export function Project({id, title, tag, description, github, live, status, finished}) {
+export function Project({id, title, tag, description, github, live, status, finished, date}) {
   const [isActive, setIsActive] = useState(true)
 
   function ShowHide() {
@@ -29,25 +30,25 @@ export function Project({id, title, tag, description, github, live, status, fini
           <p>
           {description}
           </p>
-          <Status status={status} finished={finished}/>
-          <C.Footer>
             <C.Tags>
             {tag}
             </C.Tags>
+          <C.Footer>
             <C.Links>
+              <C.Info>
+                <p>
+                <MdOutlineAccessTime className="time"/>
+                  {date}
+                </p>
+                <Status status={status} finished={finished}/>
+              </C.Info>
             <a href={github} target="_blank">
               <BsGithub size={25}/>
-              <span>
-              repo
-              </span>
             </a>
             {
               live &&
             <a href={live} target="_blank">
               <MdLanguage size={25}/>
-              <span>
-              deploy
-              </span>
             </a>
             }
             </C.Links>

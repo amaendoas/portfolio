@@ -25,6 +25,11 @@ export const Content = styled.div`
 ` 
 
 export const PopUp = styled.div`
+
+  strong {
+    font-weight: 800;
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +45,7 @@ export const PopUp = styled.div`
    p {
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
     padding: 2rem 0;
     text-align: justify;
    }

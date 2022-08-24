@@ -12,9 +12,6 @@ export function Footer() {
         <PinkButton title="amaendoas"/>
         </a>
       </C.Credits>
-      {/* <C.Social>
-        <Social/>
-      </C.Social> */}
     </C.Container>
   )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 3rem;
   .title {
-    background-color: ${({theme}) => theme.COLORS.BLUE_S};
+    background-color: ${({ theme }) => theme.COLORS.BLUE_S};
   }
 `
 export const Content = styled.div`
@@ -16,7 +16,7 @@ export const Content = styled.div`
   margin: 0 auto;
   flex-wrap: wrap;
   gap: 2rem;
-  height: 40rem;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,21 +24,20 @@ export const Content = styled.div`
   animation: downtop 1s backwards;
 
   ::-webkit-scrollbar {
-     width: 11px;
+    width: 11px;
   }
-    
+
   ::-webkit-scrollbar-track {
     border-radius: 10px;
-    background:  ${({theme}) => theme.COLORS.NEUTRAL_700};
+    background: ${({ theme }) => theme.COLORS.NEUTRAL_700};
   }
 
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: ${({theme}) => theme.COLORS.PINK_S};
-    border: 1px solid #5C5C5C;
-    box-shadow: inset -3px -3px 2px 1px ${({theme}) => theme.COLORS.PINK_P};
+    background-color: ${({ theme }) => theme.COLORS.PINK_S};
+    border: 1px solid #5c5c5c;
+    box-shadow: inset -3px -3px 2px 1px ${({ theme }) => theme.COLORS.PINK_P};
   }
-  
 
   .more {
     width: 24rem;

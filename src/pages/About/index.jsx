@@ -19,7 +19,10 @@ export function About() {
       <C.AboutMe>
         <Screen>
           <h1>About me</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate ipsum urna vel sed. In consequat arcu, ut eget tempus netus. Arcu, vel eget faucibus tortor lectus nunc arcu. Ut neque sit malesuada et enim.</p>
+          <div className="description">
+          <p>Hi, my name is <strong>Amanda Guerra</strong>, I'm 26 years old.</p>
+          <p>I'm a <strong>Front-end developer</strong>, passionate about technology and UX/UI design. I'm current looking for my first opportunity in technology area.</p>
+          </div>
         </Screen>
         <img src={balls} alt="balls" className="balls"/>
         <img src={smile} alt="smile" className="smile"/>

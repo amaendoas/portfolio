@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.span`
-  margin: 0 8px 8px 0;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 2rem; 

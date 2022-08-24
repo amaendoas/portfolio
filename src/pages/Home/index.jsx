@@ -25,9 +25,9 @@ export function Home() {
               <img src={star3} alt="" className="star3"/>
               <img src={star11} alt="" className="star11"/>
                 <h1>HELLO WORLD!</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eget tincidunt libero. orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p> My name is <strong>Amanda Guerra</strong>, I'm a <u>web developer</u>  with main interest in <strong>front-end</strong> and <strong>UX/UI design</strong>.</p>
                 <a href="https://drive.google.com/uc?export=download&id=1hRxNoNwJAkuSC5FynTUe-fzcr76WhIQG">
-                <Button icon={download} title="baixar currículo"/>
+                <Button icon={download} title="download resume"/>
                 </a>
             </C.PopUp>
           </Screen>
