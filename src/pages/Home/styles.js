@@ -3,6 +3,8 @@ import cloudsImg from "../../assets/clouds.svg"
 import bgImg from "../../assets/bg.svg"
 
 export const Container = styled.div`
+  grid-area: content;
+  height: 100%;
   background-image: url(${bgImg});
   background-repeat: repeat;
   background-position: center;
@@ -15,6 +17,7 @@ export const Main = styled.main`
   align-items: center;
   justify-content: center;
   gap: 6rem;
+  padding-left: 3rem;
 
   @media (max-width: 1000px) {
     gap: 3rem;
@@ -25,7 +28,7 @@ export const Content = styled.div`
 ` 
 
 export const PopUp = styled.div`
-
+  margin: 0 3rem;
   strong {
     font-weight: 800;
   }
@@ -45,7 +48,7 @@ export const PopUp = styled.div`
    p {
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 1.7rem;
     padding: 2rem 0;
     text-align: justify;
    }
@@ -86,10 +89,6 @@ export const PopUp = styled.div`
     bottom: -3rem;
     width: 7rem;
    }
-
-  @media (max-width: 1050px) {
-    margin: 0 3rem;
-  }
 
   @media (min-width: 800px) {
     width: 40rem;

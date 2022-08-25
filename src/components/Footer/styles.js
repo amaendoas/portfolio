@@ -4,8 +4,8 @@ export const Container = styled.div`
   font-family: 'VT323', monospace;
   padding: 0 1rem;
   grid-area: footer;
-  height: 4rem;
-  width: fit-content;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
   border: 1px solid ${({ theme }) => theme.COLORS.TEXT};

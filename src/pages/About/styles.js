@@ -4,12 +4,14 @@ import myPhoto from "../../assets/photo.jpg"
 export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   animation: downtop 1s backwards;
 
   @media (min-width: 600px) {
     gap: 3rem;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (min-width: 1000px) {
@@ -38,7 +40,7 @@ export const Container = styled.div`
 export const Image = styled.div`
   margin-top: 7rem;
   width: 30rem;
-  height: 18rem;
+  height: clamp(18rem, 18rem + 10vh, 38rem);
   background-image: url(${myPhoto});
   background-size: cover;
   background-position: center;
@@ -121,12 +123,17 @@ export const Image = styled.div`
 
 export const AboutMe = styled.div`
   position: relative;
+  height: fit-content;
 
   h1 {
     font-size: 2.5rem;
     text-align: start;
     line-height: 2rem;
     padding: 1rem 1rem 0;
+
+    span {
+      color: ${({theme}) => theme.COLORS.PINK_P};
+    }
   }
 
    .description {
@@ -143,7 +150,7 @@ export const AboutMe = styled.div`
 
    img.balls {
     position: absolute;
-    bottom: -40px;
+    bottom: -60px;
     left: -25px;
     z-index: -1;
    }

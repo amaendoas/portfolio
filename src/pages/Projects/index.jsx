@@ -5,6 +5,7 @@ import { Title } from "../../components/Title"
 import * as C from "./styles"
 import more from "../../assets/more.svg"
 import { projects } from "../../utils/projects"
+import folders from "../../assets/folders.svg"
 
 export function Projects() {
   const projectsItems = projects.reverse()
@@ -12,7 +13,10 @@ export function Projects() {
   return (
     <Theme>
     <C.Container>
-      <Title title="Projects"/>
+      <C.Title>
+        <Title title="Projects"/>
+        <img src={folders} alt="folders" className="folders"/>
+      </C.Title>
       <C.Content>
        {projectsItems.map((project) =>
        <Project

@@ -2,10 +2,6 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-  
-  .title {
-    background-color: ${({theme}) => theme.COLORS.GREEN_S};
-  }
 `
 
 export const Content = styled.div`

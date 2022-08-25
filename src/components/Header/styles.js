@@ -3,12 +3,20 @@ import styled from "styled-components";
 export const Container = styled.div`
   grid-area: header;
   height: 100%;
+  width: 100%;
   background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
   border: 1px solid ${({ theme }) => theme.COLORS.TEXT}; 
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+
+  .active {
+    border: 1px solid ${({ theme }) => theme.COLORS.TEXT}; 
+      span {
+        opacity: 1;
+      }
+    }
 
   .button-menu {
     border: none;
@@ -18,30 +26,36 @@ export const Container = styled.div`
   .logo {
     box-shadow: 4px 4px 0px ${({ theme }) => theme.COLORS.PINK_P};
   }
+  
+  nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    height: 3.2rem;
+    width: fit-content;
+    padding: 0 5px;
+    transition: 0.3s;
+    border: 1px solid ${({ theme }) => theme.COLORS.NEUTRAL_700}; 
 
-  ul li button {
-    width: 11rem;
     span {
+      color: ${({ theme }) => theme.COLORS.PINK_P};
       opacity: 0;
     }
   }
   
-  ul li button:hover {
-    border: 1px solid ${({ theme }) => theme.COLORS.PINK_P};
+  nav a:hover {
+    border: 1px solid ${({ theme }) => theme.COLORS.TEXT}; 
     span {
-      transition: 0.5s;
       opacity: 1;
     }
+  }
 
-  ul li button.selected {
-    span {
-      opacity: 1;
-    }
-  }
-  }
-  
-  .menu.active {
+  .menu.show {
     display: flex;
+    flex-direction: column;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -53,7 +67,7 @@ export const Container = styled.div`
     height: 100vh;
     animation: topdown 500ms;
     
-    ul {
+    nav {
       display: flex;
       flex-direction: column;
       gap: 4rem;
@@ -62,8 +76,10 @@ export const Container = styled.div`
     
   }
   
-  .menu.inactive {
+  .menu.hide {
     display: none;
+    display: flex;
+    gap: 8px;
   }
   
   @media (min-width: 800px) {
@@ -72,10 +88,10 @@ export const Container = styled.div`
       display: none;
     }
 
-    .menu.inactive {
+    .menu.hide {
       display: flex;
 
-      ul {
+      nav {
         display: flex;
         gap: 3rem;
       }

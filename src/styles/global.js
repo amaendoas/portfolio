@@ -48,6 +48,10 @@ export default createGlobalStyle`
     height: 10rem;
   }
 
+  button, a {
+    color: ${({theme}) => theme.COLORS.TEXT};
+  }
+
   a {
     text-decoration: none;
     cursor: pointer;

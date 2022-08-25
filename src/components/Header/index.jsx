@@ -7,41 +7,43 @@ import { Link, NavLink } from "react-router-dom"
 
 
 export function Header() {
-  const [isActive, setIsActive] = useState(false)
+  const [show, setShow] = useState(false)
 
   return(
     <C.Container>
-      <NavLink to="/" className="logo">
+      <Link to="/" className="logo">
         <PinkButton title="amaendoas" path="/"/>
-      </NavLink>
-      <button onClick={() => setIsActive(!isActive)} className="button-menu">
-      <img src={`${isActive ? close : menu}`} alt="menu" />
+      </Link>
+      <button onClick={() => setShow(!show)} className="button-menu">
+      <img src={`${show ? close : menu}`} alt="menu" />
       </button>
       <nav
-      className={`menu navbar ${isActive ? "active" : "inactive"}`}
+      className={`menu navbar ${show ? "show" : "hide"}`}
       >
-        <ul>
-          <li>
-            <NavLink to="/about">
-              <PinkButton title="about"/>
+            <NavLink to="/"
+            >
+            <span>&lsaquo;</span>home<span>/&rsaquo;</span>
             </NavLink>
-          </li>
-          <li>
+
+            <NavLink to="/about" >
+            <span>&lsaquo;</span>about<span>/&rsaquo;</span>
+            </NavLink>
+
             <NavLink to="/stack">
-              <PinkButton title="stack"/>
+            <span>&lsaquo;</span>stack<span>/&rsaquo;</span>
             </NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects" path="/projects">
-              <PinkButton title="projects"/>
+
+            <NavLink to="/projects">
+            <span>&lsaquo;</span>
+            projects
+            <span>/&rsaquo;</span>
             </NavLink>
-          </li>
-          <li>
+
             <NavLink to="/contact">
-              <PinkButton title="contact"/>
+            <span>&lsaquo;</span>
+            contact
+            <span>/&rsaquo;</span>
             </NavLink>
-          </li>
-        </ul>
       </nav>
     </C.Container>
   )
