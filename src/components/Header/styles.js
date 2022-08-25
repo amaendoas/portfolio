@@ -78,7 +78,6 @@ export const Container = styled.div`
   
   .menu.hide {
     display: none;
-    display: flex;
     gap: 8px;
   }
   
