@@ -2,8 +2,13 @@ import * as C from "./styles"
 
 export function Title({title}) {
   return(
-    <C.Container className="title">
-      <h1>{title}</h1>
+    <C.Container>
+      <h1>
+      <span>&lsaquo;</span>
+        {title}
+      <span>/&rsaquo;</span>
+      </h1>
+      
     </C.Container>
   )
 }

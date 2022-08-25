@@ -6,23 +6,30 @@ import { Button } from "../../components/Button"
 import send from "../../assets/send.svg"
 import clouds from "../../assets/3-clouds.svg"
 import balloon from "../../assets/say-hi.svg"
-import { Social } from "../../components/Social"
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import emailjs from '@emailjs/browser'
 
 export function Contact() {
   const form = useRef();
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [message, setMessage] = useState()
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if(!name | !email | !message) {
+      alert('Please fill all the info to send your message!')
+    }
+    else {
+      emailjs.sendForm('hotmailMessage', 'template_bjr3fv4', form.current, 'h-qEmow01mE_v9yMg')
+        .then((result) => {
+            alert("Thanks for you message! I'll answer you soon!")
+        }, (error) => {
+            alert('Não foi possível enviar sua mensagem.')
+        });
+        e.target.reset();
+    }
 
-    emailjs.sendForm('hotmailMessage', 'template_bjr3fv4', form.current, 'h-qEmow01mE_v9yMg')
-      .then((result) => {
-          alert('Obrigada pela mensagem! Em breve te respondo, fica de olho no e-mail!')
-      }, (error) => {
-          alert('Não foi possível enviar sua mensagem.')
-      });
-      e.target.reset();
   };
   return (
     <Theme>
@@ -37,21 +44,24 @@ export function Contact() {
             type="text"
             placeholder="Name"
             name="name"
+            onChange={(e) => setName(e.target.value)}
             />
             <input
             type="email"
             placeholder="E-mail"
             name="email"
+            onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
             name="message"
             id="message"
             cols="30"
-            rows="10" placeholder="Message"></textarea>
+            rows="10" placeholder="Message"
+            onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
             <Button icon={send} title="send" onCLick={sendEmail}/>
           </C.Form>
         </Screen>
-        <Social/>
       </C.Content>
     </C.Container>
     </Theme>

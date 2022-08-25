@@ -12,7 +12,6 @@ export const Container = styled.button`
   padding: 0 17px 0 8px;
   cursor: pointer;
   background-color: ${({ theme }) => theme.COLORS.BLUE_S};
-  box-shadow: 3px 5px 0px ${({ theme }) => theme.COLORS.TEXT};
 
   @media (min-width: 801px) {
     height: 4rem;

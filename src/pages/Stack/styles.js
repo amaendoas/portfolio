@@ -6,10 +6,6 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  .title {
-    background: ${({ theme }) => theme.COLORS.PURPLE_P}
-  }
-
   .carousel-wrapper {
     display: flex;
     align-items: center;

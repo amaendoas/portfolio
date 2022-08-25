@@ -3,50 +3,47 @@ import menu from "../../assets/menu.svg"
 import { PinkButton } from "../PinkButton"
 import { useState } from "react"
 import close from "../../assets/x.svg"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 
 export function Header() {
-  const [isActive, setIsActive] = useState(false)
+  const [show, setShow] = useState(false)
 
   return(
     <C.Container>
-      <Link to="/">
-        <PinkButton title="amaendoas" className="logo"/>
+      <Link to="/" className="logo">
+        <PinkButton title="amaendoas" path="/"/>
       </Link>
-      <button onClick={() => setIsActive(!isActive)} className="button-menu">
-      <img src={`${isActive ? close : menu}`} alt="menu" />
+      <button onClick={() => setShow(!show)} className="button-menu">
+      <img src={`${show ? close : menu}`} alt="menu" />
       </button>
       <nav
-      className={`menu navbar ${isActive ? "active" : "inactive"}`}
+      className={`menu navbar ${show ? "show" : "hide"}`}
       >
-        <ul>
-          <li>
-            <Link to="/">
-              <PinkButton title="home"/>
-            </Link>
-          </li>
-          <li>
-          <Link to="/about">
-              <PinkButton title="about"/>
-            </Link>
-          </li>
-          <li>
-            <Link to="/stack">
-              <PinkButton title="stack"/>
-            </Link>
-          </li>
-          <li>
-            <Link to="/projects">
-              <PinkButton title="projects"/>
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact">
-              <PinkButton title="contact"/>
-            </Link>
-          </li>
-        </ul>
+            <NavLink to="/"
+            >
+            <span>&lsaquo;</span>home<span>/&rsaquo;</span>
+            </NavLink>
+
+            <NavLink to="/about" >
+            <span>&lsaquo;</span>about<span>/&rsaquo;</span>
+            </NavLink>
+
+            <NavLink to="/stack">
+            <span>&lsaquo;</span>stack<span>/&rsaquo;</span>
+            </NavLink>
+
+            <NavLink to="/projects">
+            <span>&lsaquo;</span>
+            projects
+            <span>/&rsaquo;</span>
+            </NavLink>
+
+            <NavLink to="/contact">
+            <span>&lsaquo;</span>
+            contact
+            <span>/&rsaquo;</span>
+            </NavLink>
       </nav>
     </C.Container>
   )

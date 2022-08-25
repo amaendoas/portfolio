@@ -1,17 +1,32 @@
 import * as C from "./styles"
-import heartImg from "../../assets/footer-heart.svg"
-import { PinkButton } from "../PinkButton"
-import { Social } from "../Social"
+import { SiGithub, SiInstagram, SiLinkedin, SiReact } from "react-icons/si"
+import { HiOutlineMail } from "react-icons/hi"
+
+
 
 export function Footer() {
   return (
     <C.Container>
-      <C.Credits>
-      developed with <img src={heartImg} alt="heart" /> by 
-        <a href="https://github.com/amaendoas" target="_blank">
-        <PinkButton title="amaendoas"/>
-        </a>
-      </C.Credits>
+        <a href="https://github.com/amaendoas" target='_blank'>
+        <span>&lsaquo;</span>
+          github
+        <span>/&rsaquo;</span>
+          </a>
+        <a href="https://www.instagram.com/amaendoas" target='_blank'>
+        <span>&lsaquo;</span>
+          instagram
+        <span>/&rsaquo;</span>
+          </a>
+        <a href="https://www.linkedin.com/in/guerramanda/" target='_blank'>
+        <span>&lsaquo;</span>
+          linkedin
+        <span>/&rsaquo;</span>
+          </a>
+        <a href="mailto:guerraamanda1@hotmail.com" target='_blank'>
+        <span>&lsaquo;</span>
+          email
+          <span>/&rsaquo;</span>
+          </a>
     </C.Container>
   )
 }

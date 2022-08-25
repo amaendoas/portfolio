@@ -8,12 +8,12 @@ export const Container = styled.div`
   width: 100%;
 
   span {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
   }
   
   svg {
-    font-size: 12px;
+    font-size: 13px;
     color: ${({theme, finished}) => finished ? theme.COLORS.GREEN : theme.COLORS.ORANGE}
   }
 `

@@ -4,9 +4,18 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  .title {
-    background-color: ${({ theme }) => theme.COLORS.BLUE_S};
+  gap: 3rem; 
+`
+
+export const Title = styled.div`
+  position: relative;
+  width: 32rem;
+  .folders {
+    position: absolute;
+    bottom: 0;
+    width: 5rem;
+    right: 0;
+    animation: downtop 1s backwards;
   }
 `
 export const Content = styled.div`

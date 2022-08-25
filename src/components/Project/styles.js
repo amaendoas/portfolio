@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 
   .active {
-    height: 22.5rem;
+    height: 22rem;
   }
   .content.inactive {
     display: none;
@@ -28,26 +28,16 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   display: flex;
-  gap: 1rem;
   align-items: center;
   justify-content: space-between;
 
   span {
-    font-size: 1.7rem;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.3rem;
-    height: 2.3rem;
-    border-width: 0px 0px 2px 2px;
-    border-style: solid;
-    border-color: ${({theme}) => theme.COLORS.TEXT};
-    background-color: ${({theme}) => theme.COLORS.PINK_P};
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: ${({theme}) => theme.COLORS.PINK_P};
   }
 
   h2 {
-    width: 80%;
     font-weight: 800;
     letter-spacing: -0.05em;
     font-size: 2rem;
@@ -111,12 +101,8 @@ export const Links = styled.div`
   }
 
   a:hover {
-    span {
-      color: ${({theme}) => theme.COLORS.PURPLE_P};
-      transition: 0.3s;
-    }
     svg {
-      color: ${({theme}) => theme.COLORS.PURPLE_P};
+      color: ${({theme}) => theme.COLORS.BLUE_P};
       transition: 0.3s;
     }
   }
@@ -129,13 +115,13 @@ export const Info = styled.div`
   flex-direction: column;
   p {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: flex;
     gap: 5px;
     align-items: center;
   }
 
   svg.time {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 `
