@@ -25,7 +25,8 @@ export function About() {
           </h1>
           <div className="description">
           <p>Hi, my name is <strong>Amanda Guerra</strong>, I'm 26 years old.</p>
-          <p>I'm a <strong>Front-end developer</strong>, passionate about technology and UX/UI design. I'm current looking for my first opportunity in technology area.</p>
+          <p>I'm a <strong>Front-end developer</strong>, passionate about technology and UX/UI design. I'm current improving my skills in React to get my first opportunity in technology area.</p>
+          <p>I also have a civil engineering degree!</p>
           </div>
         </Screen>
         <img src={balls} alt="balls" className="balls"/>
