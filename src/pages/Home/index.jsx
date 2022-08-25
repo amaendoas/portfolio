@@ -26,7 +26,7 @@ export function Home() {
               <img src={star11} alt="" className="star11"/>
                 <h1>HELLO WORLD!</h1>
                 <p> My name is <strong>Amanda Guerra</strong>, I'm a <u>web developer</u>  with main interest in <strong>front-end</strong> and <strong>UX/UI design</strong>.</p>
-                <a href="https://drive.google.com/uc?export=download&id=1hRxNoNwJAkuSC5FynTUe-fzcr76WhIQG">
+                <a href="https://drive.google.com/uc?export=download&id=1bBKKjvVO9OkTxDS0FDCp0C7pj7uwwkmf">
                 <Button icon={download} title="download resume"/>
                 </a>
             </C.PopUp>
