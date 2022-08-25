@@ -16,6 +16,23 @@ export const Container = styled.div`
     gap: 10rem;
   }
   overflow-y: auto;
+  overflow-x: hidden;
+  
+  ::-webkit-scrollbar {
+        width: 11px;
+      }
+    
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: ${({ theme }) => theme.COLORS.NEUTRAL_700};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: ${({ theme }) => theme.COLORS.PINK_S};
+    border: 1px solid #5c5c5c;
+    box-shadow: inset -3px -3px 2px 1px ${({ theme }) => theme.COLORS.PINK_P};
+  }
 `
 
 export const Image = styled.div`

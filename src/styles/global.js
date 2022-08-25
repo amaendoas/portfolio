@@ -21,22 +21,6 @@ export default createGlobalStyle`
     font-family: 'JetBrains Mono', monospace;
   }
 
-  body::-webkit-scrollbar {
-    width: 11px;
-  }
-
-  body::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: ${({ theme }) => theme.COLORS.NEUTRAL_700};
-  }
-
-  body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: ${({ theme }) => theme.COLORS.PINK_S};
-    border: 1px solid #5c5c5c;
-    box-shadow: inset -3px -3px 2px 1px ${({ theme }) => theme.COLORS.PINK_P};
-  }
-
   button {
     font-family: 'JetBrains Mono', monospace;
     cursor: pointer;

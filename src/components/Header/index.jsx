@@ -11,9 +11,9 @@ export function Header() {
 
   return(
     <C.Container>
-      <Link to="/" className="logo">
+      <NavLink to="/" className="logo">
         <PinkButton title="amaendoas" path="/"/>
-      </Link>
+      </NavLink>
       <button onClick={() => setIsActive(!isActive)} className="button-menu">
       <img src={`${isActive ? close : menu}`} alt="menu" />
       </button>
@@ -23,23 +23,23 @@ export function Header() {
         <ul>
           <li>
             <NavLink to="/about">
-              <PinkButton title="about" path="/about"/>
+              <PinkButton title="about"/>
             </NavLink>
           </li>
           <li>
-            <Link to="/stack">
-              <PinkButton title="stack" path="/stack"/>
-            </Link>
+            <NavLink to="/stack">
+              <PinkButton title="stack"/>
+            </NavLink>
           </li>
           <li>
-            <Link to="/projects" path="/projects">
+            <NavLink to="/projects" path="/projects">
               <PinkButton title="projects"/>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">
-              <PinkButton title="contact" path="/contact"/>
-            </Link>
+            <NavLink to="/contact">
+              <PinkButton title="contact"/>
+            </NavLink>
           </li>
         </ul>
       </nav>

@@ -17,7 +17,6 @@ export function Projects() {
        {projectsItems.map((project) =>
        <Project
        key={project.id}
-       id={project.id}
        title={project.title}
        img={project.img}
        description={project.description}

@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Status } from "../Status/index.jsx"
 import { MdOutlineAccessTime } from "react-icons/md"
 
-export function Project({id, title, tag, description, github, live, status, finished, date}) {
+export function Project({ title, tag, description, github, live, status, finished, date}) {
   const [isActive, setIsActive] = useState(true)
 
   function ShowHide() {
@@ -17,8 +17,11 @@ export function Project({id, title, tag, description, github, live, status, fini
   return (
     <C.Container>
       <C.Title>
-        <span>{id}</span>
-        <h2>{title}</h2>
+        <h2>
+      <span>&lsaquo;</span>
+          {title}
+      <span>/&rsaquo;</span>
+        </h2>
         <button onClick={ShowHide}> 
         {
           isActive ? <MdOutlineKeyboardArrowUp/> : <MdOutlineKeyboardArrowDown/>

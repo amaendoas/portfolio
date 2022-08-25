@@ -4,11 +4,11 @@ export const Container = styled.div`
   grid-area: header;
   height: 100%;
   background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
+  border: 1px solid ${({ theme }) => theme.COLORS.TEXT}; 
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
 
   .button-menu {
     border: none;
@@ -32,6 +32,12 @@ export const Container = styled.div`
       transition: 0.5s;
       opacity: 1;
     }
+
+  ul li button.selected {
+    span {
+      opacity: 1;
+    }
+  }
   }
   
   .menu.active {
