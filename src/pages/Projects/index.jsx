@@ -10,8 +10,6 @@ import folders from "../../assets/folders.svg"
 export function Projects() {
   const projectsItems = projects.slice(0).reverse()
 
-  console.log(projectsItems)
-
   return (
     <Theme>
     <C.Container>

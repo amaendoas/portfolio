@@ -1,7 +1,9 @@
 import styled from "styled-components";
-
+import bgImg from "../../assets/bg-conffeti.svg"
 
 export const Container = styled.div`
+  background-image: url(${bgImg});
+  background-repeat: repeat;
 `
 
 export const Content = styled.div`

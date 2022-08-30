@@ -31,5 +31,17 @@ export const projects = [
     title: 'StepDev',
     description: "Fullstack project of a SPA website of a fictitious company (StepDev) that simulates a budget request through a responsive multi-step form for educational purposes.", status: 'Finished', finished: 'finished', github: 'https://github.com/amaendoas/stepdev-frontend', live: 'https://stepdev1.web.app/',  date: '28/07/2022',
     tags: ['figma', 'react', 'nodejs', 'firebase', 'typescript']
+  },
+  {
+    id: 6,
+    title: 'Portfolio',
+    description: "Frontend project of a SPA website for my personal use to gather the main projects I've done and also the ones I'm working on it.", status: 'Always Working On it', github: 'https://github.com/amaendoas/portfolio',  date: '12/08/2022',
+    tags: ['figma', 'html', 'react', 'javascript']
+  },
+  {
+    id: 7,
+    title: 'FoodExplorer',
+    description: "Fullstack project of a fictitious restaurant that simulates a virtual menu where customers can view dishes and place orders. This is the final project of Rocketseat's Explorer.", status: 'Working On it', github: 'https://github.com/amaendoas/food-explorer-backend',  date: '26/08/2022',
+    tags: ['figma', 'react', 'nodejs', 'sqlite']
   }
 ]
