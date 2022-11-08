@@ -1,4 +1,3 @@
-import rocketMovie from "../assets/rocket-movie.png"
 
 export const projects = [
   {

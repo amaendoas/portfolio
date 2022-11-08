@@ -17,7 +17,6 @@ export const Main = styled.main`
   align-items: center;
   justify-content: center;
   gap: 6rem;
-  padding-left: 3rem;
 
   @media (max-width: 1000px) {
     gap: 3rem;
