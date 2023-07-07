@@ -9,9 +9,11 @@ import star11 from "../../assets/star-11.svg"
 import smile from "../../assets/smile-baloon.svg"
 import { Screen } from "../../components/Screen"
 import coding from "../../assets/coding.gif"
+import { useTranslation } from "react-i18next"
 
 
 export function Home() {
+  const { t } = useTranslation();
   return(
     <Theme>
     <C.Container>
@@ -25,9 +27,11 @@ export function Home() {
               <img src={star3} alt="" className="star3"/>
               <img src={star11} alt="" className="star11"/>
                 <h1>HELLO WORLD!</h1>
-                <p> My name is <strong>Amanda Guerra</strong>, I'm a <u>web developer</u>  with main interest in <strong>front-end</strong> and <strong>UX/UI design</strong>.</p>
+                <p>
+                 { t("myNameIs") } <strong>Amanda Guerra</strong>, {t("iAm")} <u>{t("webDeveloper")}</u> {t("mainInterest")} <strong>front-end</strong> {t("and")} <strong>UX/UI</strong> design.
+                </p>
                 <a href="https://drive.google.com/u/0/uc?id=1Uw9UXIF2-ZxBWK11sjSHmeetO5gUOhRv&export=download" target="_blank">
-                <Button icon={download} title="download resume"/>
+                <Button icon={download} title={t("downloadText")}/>
                 </a>
             </C.PopUp>
           </Screen>

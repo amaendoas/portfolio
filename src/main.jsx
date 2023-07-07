@@ -4,6 +4,7 @@ import { AppRoutes } from "./routes";
 import { ThemeProvider } from 'styled-components'
 import theme from './styles/theme'
 import GlobalStyle from "./styles/global";
+import "./i18n/index.js"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

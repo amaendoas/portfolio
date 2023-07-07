@@ -39,6 +39,7 @@ export const PopUp = styled.div`
   h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 3rem;
+    max-width: 300px;
     text-align: center;
     line-height: 3.2rem;
     padding-top: 2rem;
