@@ -22,7 +22,7 @@ export const projects = [
   {
     id: 4,
     title: 'RocketMovie',
-    description: "Fullstack project consists of a responsive SPA with the objective of listing and evaluating watched movies. Developed for educational purposes on Rocketseat's Explorer Stage 09.", status: 'Working on it', github: 'https://github.com/amaendoas/rocket-movie-frontend',  date: '06/06/2022',
+    description: "Fullstack project consists of a responsive SPA with the objective of listing and evaluating watched movies. Developed for educational purposes on Rocketseat's Explorer Stage 09.",status: 'Finished', finished: 'finished', github: 'https://github.com/amaendoas/rocket-movie-frontend',  date: '06/06/2022',
     tags: ['figma', 'react', 'nodejs', 'sqlite']
   },
   {
@@ -40,7 +40,7 @@ export const projects = [
   {
     id: 7,
     title: 'FoodExplorer',
-    description: "Fullstack project of a fictitious restaurant that simulates a virtual menu where customers can view dishes and place orders. This is the final project of Rocketseat's Explorer.", status: 'Working On it', github: 'https://github.com/amaendoas/food-explorer-backend',  date: '26/08/2022',
+    description: "Fullstack project of a fictitious restaurant that simulates a virtual menu where customers can view dishes and place orders. This is the final project of Rocketseat's Explorer.", status: 'Finished', finished: 'finished', github: 'https://github.com/amaendoas/food-explorer-backend',  date: '26/08/2022',
     tags: ['figma', 'react', 'nodejs', 'sqlite']
   }
 ]
