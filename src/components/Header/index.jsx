@@ -4,6 +4,7 @@ import { PinkButton } from "../PinkButton"
 import { useState } from "react"
 import close from "../../assets/x.svg"
 import { Link, NavLink } from "react-router-dom"
+import { LanguageSwitch } from "../LanguageSwitch"
 
 
 export function Header() {
@@ -44,6 +45,7 @@ export function Header() {
             contact
             <span>/&rsaquo;</span>
             </NavLink>
+            <LanguageSwitch/>
       </nav>
     </C.Container>
   )
