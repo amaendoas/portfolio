@@ -34,5 +34,21 @@ export const Container = styled.div`
       span {
         opacity: 1;
       }
+  }
+  .showIcon {
+    display: block;
+  }
+
+  .showName {
+    display: none; 
+  }
+
+  @media (min-width: 400px) {
+    .showIcon {
+      display: none;
     }
+    .showName {
+      display: block; 
+    }
+  }
 `

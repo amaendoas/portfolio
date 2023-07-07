@@ -7,12 +7,12 @@ import { Link, NavLink } from "react-router-dom"
 
 
 export function Header() {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
 
   return(
     <C.Container>
       <Link to="/" className="logo">
-        <PinkButton title="amaendoas" path="/"/>
+      <PinkButton title="amaendoas" path="/"/>
       </Link>
       <button onClick={() => setShow(!show)} className="button-menu">
       <img src={`${show ? close : menu}`} alt="menu" />

@@ -9,6 +9,8 @@ export const Container = styled.div `
   "header"
   "content"
   "footer";
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   @keyframes downtop {
     0% {

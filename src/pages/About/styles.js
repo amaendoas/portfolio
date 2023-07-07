@@ -3,22 +3,12 @@ import myPhoto from "../../assets/photo.jpg"
 
 export const Container = styled.div`
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
-  align-items: stretch;
   justify-content: center;
   animation: downtop 1s backwards;
-
-  @media (min-width: 600px) {
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (min-width: 1000px) {
-    gap: 10rem;
-  }
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
   
   ::-webkit-scrollbar {
         width: 11px;
@@ -35,32 +25,56 @@ export const Container = styled.div`
     border: 1px solid #5c5c5c;
     box-shadow: inset -3px -3px 2px 1px ${({ theme }) => theme.COLORS.PINK_P};
   }
+
+  @media (min-width: 600px) {
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 1000px) {
+    gap: 10rem;
+  }
 `
 
 export const Image = styled.div`
   margin-top: 7rem;
+  max-width: 80vw;
   width: 30rem;
-  height: clamp(18rem, 18rem + 10vh, 38rem);
+  height: clamp(18rem, 18rem + 10vh, 30rem);
   background-image: url(${myPhoto});
   background-size: cover;
   background-position: center;
   position: relative;
 
-  div {
-    position: absolute;
-    right: 35px;
-    top: -75px;
+  @media (min-width: 650px) {
+    margin: 0;
+    padding: 0 3rem;
+  }
 
-    img.tag {
-      position: relative;
-    }
+  @media (min-width: 900px) {
+  width: 35rem;
+   height: 35rem;
+  }
+`
+export const Stickers = styled.div`
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: -60px;
+
+    
+    div {
+    position: relative;
+    
 
     p {
       position: absolute;
       z-index: 1;
       width: 9rem;
       font-weight: 800;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       line-height: 18px;
       text-align: center;
       letter-spacing: -0.05rem;
@@ -70,35 +84,33 @@ export const Image = styled.div`
       text-shadow: 3px 3px 0px ${({theme}) => theme.COLORS.GREEN_S};
       transform: rotate(9deg);
       bottom: 20px;
-      left: 7px;
+      left: 15px;
+      }
     }
-  }
 
   .balloon {
-    position: absolute;
-    left: 25px;
-    top: -75px;
     z-index: 1;
+    width: 12rem;
+    position: absolute;
+    left: 2rem;
   }
 
-  @media (min-width: 650px) {
-    margin: 0;
-    padding: 0 3rem;
-  }
-
+  .tag {
+    svg {
+      width: 14rem;
+      height: 12rem;
+    }
+    }
+  
   @media (min-width: 900px) {
-    width: 35rem;
-    height: 28rem;
-
+    top: -95px;
     .balloon {
       width: 20rem;
-      top: -110px;
+      top: 10px;
+      left: -3rem;
     }
 
     div {
-      top: -130px;
-      right: 0;
-
       p {
         width: 20rem;
         font-size: 2.6rem;
@@ -117,16 +129,16 @@ export const Image = styled.div`
         height: 22rem;
       }
     }
-
   }
 `
 
 export const AboutMe = styled.div`
   position: relative;
   height: fit-content;
+  max-width: 80vw;
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: start;
     line-height: 2rem;
     padding: 1rem 1rem 0;
@@ -138,7 +150,7 @@ export const AboutMe = styled.div`
 
    .description {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
     padding: 1rem;
     text-align: justify;

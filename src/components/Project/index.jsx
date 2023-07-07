@@ -11,7 +11,6 @@ export function Project({ title, tag, description, github, live, status, finishe
 
   function ShowHide() {
     setIsActive(!isActive)
-    console.log(isActive)
   }
 
   return (
