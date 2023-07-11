@@ -3,56 +3,51 @@ import brFlag from "../../assets/br-flag.svg"
 import usaFlag from "../../assets/usa-flag.svg"
 import { useTranslation } from "react-i18next"
 import { useState } from "react"
-import {IoIosClose} from "react-icons/io"
-
-const languageOptions = [
-  {
-    name: "pt-br",
-    value: "ptBr",
-    flag: brFlag
-  },
-  {
-    name: "eng",
-    value: "eng",
-    flag: usaFlag
-  }
-]
+import { PopUp } from "../PopUp"
 
 export function LanguageSwitch() {
-  const { i18n } = useTranslation()
+  const languageOptions = [
+    {
+      name: "pt-br",
+      value: "ptBr",
+      flag: brFlag
+    },
+    {
+      name: "eng",
+      value: "eng",
+      flag: usaFlag
+    }
+  ]
+  const { t, i18n } = useTranslation();
+
   const [showLanguagePopUp, setShowLanguagePopUp] = useState(false)
   return (
     <>
-      <C.Dropdown onClick={() => setShowLanguagePopUp(!showLanguagePopUp)}>
-          {languageOptions.map((option) => {
+      <C.PopUpBtn onClick={() => setShowLanguagePopUp(!showLanguagePopUp)}>
+          {
+          languageOptions.map((option) => {
             if(i18n.language === option.value){
               return (
-                  <C.Button><img src={option.flag} alt="" />
+                  <C.LanguageBtn key={option.value}><img src={option.flag} alt="" />
                   {option.name}
-                  </C.Button>
+                  </C.LanguageBtn>
                 )
             }
-          })}
-      </C.Dropdown>
+          })
+          }
+      </C.PopUpBtn>
      { showLanguagePopUp ?
-      <>
-        <C.After onClick={()=> setShowLanguagePopUp(!showLanguagePopUp)}>
-        </C.After>
-          <C.PopUp>
-            <p>Choose your language</p>
+      <C.Wrapper>
+        <PopUp title={t("chooseLanguage")} onClick={()=> setShowLanguagePopUp(!showLanguagePopUp)}>
             {languageOptions.map((option) => {
               return (
-                  <C.Button onClick={() => i18n.changeLanguage(option.value)}><img src={option.flag} alt="" />
+                  <C.LanguageBtn onClick={() => i18n.changeLanguage(option.value)} key={option.value}><img src={option.flag} alt="" />
                   {option.name}
-                  </C.Button>
+                  </C.LanguageBtn>
                 )
               })}
-              <C.Button onClick={()=> setShowLanguagePopUp(!showLanguagePopUp)}>
-                <IoIosClose/>
-              </C.Button>
-            </C.PopUp>
-      </>
-     
+        </PopUp>
+      </C.Wrapper>
       : <></>}
     </>
   )
