@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const Container = styled.button`
   height: 3rem;
   width: fit-content;
-  font-size: 1.4rem;
-  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -23,9 +21,19 @@ export const Container = styled.button`
     }
   }
 
-
   :hover {
     animation: buttonD 400ms forwards;
     background-color: ${({ theme }) => theme.COLORS.BLUE_P};
+  }
+
+  :disabled {
+    animation: none;
+    background-color: initial;
+  }
+
+  p {
+    padding: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
   }
 `
