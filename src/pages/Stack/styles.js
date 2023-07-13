@@ -5,6 +5,7 @@ export const Container = styled.div`
   gap: 7rem;
   width: 100%;
   height: 100%;
+  grid-area: content;
 
   .carousel-wrapper {
     display: flex;

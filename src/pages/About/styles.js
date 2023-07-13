@@ -3,6 +3,7 @@ import myPhoto from "../../assets/photo.jpg"
 
 export const Container = styled.div`
   display: flex;
+  grid-area: content;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;

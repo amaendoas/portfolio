@@ -3,17 +3,16 @@ import brFlag from "../../assets/br-flag.svg"
 import usaFlag from "../../assets/usa-flag.svg"
 import { useTranslation } from "react-i18next"
 import { useState } from "react"
-import { PopUp } from "../PopUp"
+import { MdOutlineKeyboardArrowUp, MdOutlineKeyboardArrowDown } from "react-icons/md"
 
 export function LanguageSwitch() {
+  const [isActive, setIsActive] = useState(false)
   const languageOptions = [
     {
-      name: "pt-br",
       value: "ptBr",
       flag: brFlag
     },
     {
-      name: "eng",
       value: "eng",
       flag: usaFlag
     }
@@ -21,34 +20,42 @@ export function LanguageSwitch() {
   const { t, i18n } = useTranslation();
 
   const [showLanguagePopUp, setShowLanguagePopUp] = useState(false)
+
+  function showDropDown() {
+    setIsActive(!isActive)
+    setShowLanguagePopUp(!showLanguagePopUp)
+  }
   return (
     <>
-      <C.PopUpBtn onClick={() => setShowLanguagePopUp(!showLanguagePopUp)}>
+      <C.DropDown onClick={showDropDown}>
           {
           languageOptions.map((option) => {
             if(i18n.language === option.value){
               return (
-                  <C.LanguageBtn key={option.value}><img src={option.flag} alt="" />
-                  {option.name}
-                  </C.LanguageBtn>
+                <>
+                <C.LanguageBtn key={option.value}><img src={option.flag} alt=""/>
+                  {
+                  isActive ? <MdOutlineKeyboardArrowUp/> : <MdOutlineKeyboardArrowDown/>
+                  }
+                </C.LanguageBtn>
+                     { showLanguagePopUp ?
+                      <C.Wrapper>
+                        {languageOptions.map((option) => {
+                          if(i18n.language !== option.value) {
+                            return (
+                                <C.LanguageBtn onClick={() => i18n.changeLanguage(option.value)} key={option.value}><img src={option.flag} alt="" />
+                                </C.LanguageBtn>
+                              )
+                          }
+                          })}
+                      </C.Wrapper>
+                      : <></>}
+                </>
                 )
             }
           })
           }
-      </C.PopUpBtn>
-     { showLanguagePopUp ?
-      <C.Wrapper>
-        <PopUp title={t("chooseLanguage")} onClick={()=> setShowLanguagePopUp(!showLanguagePopUp)}>
-            {languageOptions.map((option) => {
-              return (
-                  <C.LanguageBtn onClick={() => i18n.changeLanguage(option.value)} key={option.value}><img src={option.flag} alt="" />
-                  {option.name}
-                  </C.LanguageBtn>
-                )
-              })}
-        </PopUp>
-      </C.Wrapper>
-      : <></>}
+      </C.DropDown>
     </>
   )
 } 
