@@ -1,7 +1,7 @@
 import * as C from "./styles"
 import close from "../../assets/x.svg"
 
-export function PopUp({children, title, onClick}) {
+export function Alert({children, title, onClick}) {
   return (
     <C.Container>
       <C.Header>

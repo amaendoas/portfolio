@@ -7,8 +7,10 @@ import { Title } from "../../components/Title"
 import star from "../../assets/star-smile.svg"
 import heart from "../../assets/heart.svg"
 import { stack } from "../../utils/stack"
+import { useTranslation } from "react-i18next"
 
 export function Stack() {
+  const { t } = useTranslation()
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2, itemsToScroll: 2 },
@@ -18,7 +20,7 @@ export function Stack() {
   return (
     <Theme>
     <C.Container>
-      <Title title="Stack"/>
+      <Title title={t("stackTitle")}/>
 
       <C.Content>
         <div className="carousel-wrapper">

@@ -6,15 +6,17 @@ import * as C from "./styles"
 import more from "../../assets/more.svg"
 import { projects } from "../../utils/projects"
 import folders from "../../assets/folders.svg"
+import { useTranslation } from "react-i18next"
 
 export function Projects() {
   const projectsItems = projects.slice(0).reverse()
+  const { t } = useTranslation()
 
   return (
     <Theme>
     <C.Container>
       <C.Title>
-        <Title title="Projects"/>
+        <Title title={t("projectsTitle")}/>
         <img src={folders} alt="folders" className="folders"/>
       </C.Title>
       <C.Content>
@@ -23,10 +25,10 @@ export function Projects() {
        key={project.id}
        title={project.title}
        img={project.img}
-       description={project.description}
+       description={t(project.title + "Description")}
        github={project.github}
        live={project.live}
-       status={project.status}
+       status={t(project.title + "Status")}
        finished={project.finished}
        date={project.date}
        tag={(project.tags.map((tag, index) =>

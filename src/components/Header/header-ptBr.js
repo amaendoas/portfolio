@@ -1,7 +1,7 @@
 const headerPtBR = {
   home: "início",
   about: "sobre mim",
-  stack: "stack",
+  stack: "tecnologias",
   projects: "projetos",
   contact: "contato"
 }
