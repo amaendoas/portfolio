@@ -10,13 +10,14 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "i18next": "^23.2.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-elastic-carousel": "^0.11.5",
+    "react-i18next": "^13.0.1",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
-    "styled-components": "^5.3.5",
-    "use-window-dimensions": "^1.0.2"
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

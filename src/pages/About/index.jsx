@@ -5,7 +5,10 @@ import balloon from "../../assets/pixel-baloon.svg"
 import tag from "../../assets/front-end-tag.svg"
 import balls from "../../assets/balls.svg"
 import smile from "../../assets/smile-pixel.svg"
+import { useTranslation } from "react-i18next"
+
 export function About() {
+  const { t } = useTranslation()
   return (
     <Theme>
     <C.Container>
@@ -22,13 +25,13 @@ export function About() {
         <Screen>
             <h1>
           <span>&lsaquo;</span>
-            AboutMe
+            {t("title")}
           <span>/&rsaquo;</span>
           </h1>
           <div className="description">
-          <p>Hi, my name is <strong>Amanda Guerra</strong>, I'm 27 years old.</p>
-          <p>I'm a <strong>Front-end developer</strong>, passionate about technology and UX/UI design. I'm current improving my skills in React to get my first opportunity in technology area.</p>
-          <p>I also have a civil engineering degree!</p>
+          <p>{t("HiMyNameIs")} <strong>Amanda Guerra</strong>, {t("myAge")}</p>
+          <p>{t("iAm")} <strong>{t("frontEnd")}</strong>, {t("passionAndSkills")}</p>
+          <p>{t("civilDegree")}</p>
           </div>
         </Screen>
         <img src={balls} alt="balls" className="balls"/>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import bgImg from "../../assets/bg-conffeti.svg"
 
 export const Container = styled.div`
+  grid-area: content;
   background-image: url(${bgImg});
   background-repeat: repeat;
 `

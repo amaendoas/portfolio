@@ -4,9 +4,10 @@ export const Container = styled.div `
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 52px auto 38px;
+  grid-template-rows: 52px min-content auto 38px;
   grid-template-areas:
   "header"
+  "subHeader"
   "content"
   "footer";
   overflow-x: hidden;

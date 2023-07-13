@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  grid-area: content;
   width: 100%;
   display: flex;
   flex-direction: column;

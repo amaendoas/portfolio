@@ -4,10 +4,12 @@ import { PinkButton } from "../PinkButton"
 import { useState } from "react"
 import close from "../../assets/x.svg"
 import { Link, NavLink } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 
 
 export function Header() {
   const [show, setShow] = useState(false);
+  const { t } = useTranslation()
 
   return(
     <C.Container>
@@ -22,26 +24,26 @@ export function Header() {
       >
             <NavLink to="/"
             >
-            <span>&lsaquo;</span>home<span>/&rsaquo;</span>
+            <span>&lsaquo;</span>{t("home")}<span>/&rsaquo;</span>
             </NavLink>
 
             <NavLink to="/about" >
-            <span>&lsaquo;</span>about<span>/&rsaquo;</span>
+            <span>&lsaquo;</span>{t("about")}<span>/&rsaquo;</span>
             </NavLink>
 
             <NavLink to="/stack">
-            <span>&lsaquo;</span>stack<span>/&rsaquo;</span>
+            <span>&lsaquo;</span>{t("stack")}<span>/&rsaquo;</span>
             </NavLink>
 
             <NavLink to="/projects">
             <span>&lsaquo;</span>
-            projects
+            {t("projects")}
             <span>/&rsaquo;</span>
             </NavLink>
 
             <NavLink to="/contact">
             <span>&lsaquo;</span>
-            contact
+            {t("contact")}
             <span>/&rsaquo;</span>
             </NavLink>
       </nav>

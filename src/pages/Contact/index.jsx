@@ -8,8 +8,10 @@ import clouds from "../../assets/3-clouds.svg"
 import balloon from "../../assets/say-hi.svg"
 import React, { useRef, useState } from "react"
 import emailjs from '@emailjs/browser'
+import { useTranslation } from "react-i18next"
 
 export function Contact() {
+  const { t } = useTranslation()
   const form = useRef();
   const [name, setName] = useState()
   const [email, setEmail] = useState()
@@ -18,14 +20,14 @@ export function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     if(!name | !email | !message) {
-      alert('Please fill all the info to send your message!')
+      alert(t("contactAlertMissing"))
     }
     else {
       emailjs.sendForm('hotmailMessage', 'template_bjr3fv4', form.current, 'h-qEmow01mE_v9yMg')
         .then((result) => {
-            alert("Thanks for you message! I'll answer you soon!")
+            alert(t("contactAlertSuccess"))
         }, (error) => {
-            alert('Não foi possível enviar sua mensagem.')
+            alert(t("contactAlertError"))
         });
         e.target.reset();
     }
@@ -34,7 +36,7 @@ export function Contact() {
   return (
     <Theme>
     <C.Container>
-      <Title title="Contact"/>
+      <Title title={t("titleContact")}/>
       <C.Content>
         <Screen>
           <img src={clouds} alt="clouds" className="clouds"/>
@@ -42,13 +44,13 @@ export function Contact() {
           <C.Form ref={form} onSubmit={sendEmail}>
             <input
             type="text"
-            placeholder="Name"
+            placeholder={t("contactName")}
             name="name"
             onChange={(e) => setName(e.target.value)}
             />
             <input
             type="email"
-            placeholder="E-mail"
+            placeholder={t("contactEmail")}
             name="email"
             onChange={(e) => setEmail(e.target.value)}
             />
@@ -56,10 +58,10 @@ export function Contact() {
             name="message"
             id="message"
             cols="30"
-            rows="10" placeholder="Message"
+            rows="10" placeholder={t("contactMessage")}
             onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <Button icon={send} title="send" onCLick={sendEmail}/>
+            <Button icon={send} title={t("contactSend")} onCLick={sendEmail}/>
           </C.Form>
         </Screen>
       </C.Content>
