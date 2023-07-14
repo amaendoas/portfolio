@@ -43,6 +43,18 @@ export const Content = styled.div`
     background-color: ${({ theme }) => theme.COLORS.PINK_P};
   }
 
+  button.sending {
+    background-color: ${({ theme }) => theme.COLORS.PINK_P};
+
+    p {
+      margin-left: 5px;
+    }
+
+    :hover {
+      
+    }
+  }
+
   @media (min-width: 800px) {
     img.balloon{
       display: block;

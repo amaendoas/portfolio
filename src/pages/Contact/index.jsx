@@ -9,6 +9,9 @@ import balloon from "../../assets/say-hi.svg"
 import React, { useRef, useState } from "react"
 import emailjs from '@emailjs/browser'
 import { useTranslation } from "react-i18next"
+import { Alert } from "../../components/Alert"
+import { useEffect } from "react"
+import ClipLoader from "react-spinners/ClipLoader";
 
 export function Contact() {
   const { t } = useTranslation()
@@ -16,26 +19,49 @@ export function Contact() {
   const [name, setName] = useState()
   const [email, setEmail] = useState()
   const [message, setMessage] = useState()
+  const [alertText, setAlertText] = useState("")
+  const [alertSuccess, setAlertSuccess] = useState(false)
+  const [showLoading, setShowLoading] = useState(false)
+
+  function showAlert(text, success = false) {
+    setAlertText(text)
+    setAlertSuccess(success)
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
     if(!name | !email | !message) {
-      alert(t("contactAlertMissing"))
+      showAlert(t("contactAlertMissing"))
     }
     else {
+      setShowLoading(true)
       emailjs.sendForm('hotmailMessage', 'template_bjr3fv4', form.current, 'h-qEmow01mE_v9yMg')
         .then((result) => {
-            alert(t("contactAlertSuccess"))
+            setShowLoading(false)
+            showAlert(t("contactAlertSuccess"), true)
         }, (error) => {
-            alert(t("contactAlertError"))
+            setShowLoading(false)
+            showAlert(t("contactAlertError"))
         });
         e.target.reset();
     }
 
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAlertText('')
+    }, 4000)
+
+    return () => clearTimeout(timer)
+  }, [alertText])
+  
   return (
     <Theme>
     <C.Container>
+      {
+        alertText && <Alert text={alertText} isSuccess={alertSuccess} onClick={() => setAlertText("")}/>
+      }
       <Title title={t("titleContact")}/>
       <C.Content>
         <Screen>
@@ -61,7 +87,14 @@ export function Contact() {
             rows="10" placeholder={t("contactMessage")}
             onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <Button icon={send} title={t("contactSend")} onCLick={sendEmail}/>
+            {
+              showLoading
+              ?
+              <Button title={t("sending")} className="sending" disabled>
+                <ClipLoader color={({theme}) => theme.COLORS.TEXT} size={20}/>
+              </Button>
+              : <Button icon={send} title={t("contactSend")} onCLick={sendEmail}/>
+            }
           </C.Form>
         </Screen>
       </C.Content>

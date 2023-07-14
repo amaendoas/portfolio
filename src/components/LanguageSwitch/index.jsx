@@ -39,7 +39,7 @@ export function LanguageSwitch() {
                   }
                 </C.LanguageBtn>
                      { showLanguagePopUp ?
-                      <C.Wrapper>
+                      <C.Wrapper key={option.value}>
                         {languageOptions.map((option) => {
                           if(i18n.language !== option.value) {
                             return (

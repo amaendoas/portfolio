@@ -1,39 +1,46 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  min-width: 50em;
-  background-color: ${({theme}) => theme.COLORS.NEUTRAL_700};
-  border: 4px solid ${({theme}) => theme.COLORS.TEXT};
-  border-radius: 10px;
-  p {
-    font-size: clamp(1rem, 1rem + 5vw, 1.5rem)
-  }
-  padding-bottom: 2rem;
+  position: absolute;
+  width: 100%;
+  animation: topdown 500ms;
 `
 export const CloseBtn = styled.button`
   border: none;
 `
 
-export const Header = styled.div`
-  width: 100%;
+export const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  margin: 1rem auto;
   align-items: center;
-  padding: 1rem 1.5rem;
-  border-bottom: 2px solid ${({theme}) => theme.COLORS.TEXT};
-  font-weight: bold;
-  background-color: ${({theme}) => theme.COLORS.PURPLE_S};
-
-  img {
-    color: ${({theme}) => theme.COLORS.TEXT};
+  justify-content: space-between;
+  gap: 1rem;
+  width: fit-content;
+  height: 4rem;
+  background-color: ${({theme}) => theme.COLORS.NEUTRAL_700};
+  border: 1px solid ${({theme}) => theme.COLORS.TEXT};
+  padding: 0 1.5rem;
+  p {
+    font-size: clamp(1rem, 1rem + 5vw, 1.4rem);
+    margin-right: 1rem;
   }
-`
+  img {
+    width: 1rem;
+  }
+  svg {
+    color: ${({theme}) => theme.COLORS.PINK_P};
+  }
 
-export const Body = styled.div`
-  padding: 1rem;
+  @keyframes topdown {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 `
