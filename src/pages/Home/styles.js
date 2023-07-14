@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import cloudsImg from "../../assets/clouds.svg"
 import bgImg from "../../assets/bg.svg"
+import bgDark from "../../assets/bg-dark.svg"
 
 export const Container = styled.div`
   grid-area: content;
   height: 100%;
-  background-image: url(${bgImg});
+  background-image: ${({theme}) => theme.TITLE === 'light' ? `url(${bgImg})` : `url(${bgDark})`};
   background-repeat: repeat;
   background-position: center;
 `
