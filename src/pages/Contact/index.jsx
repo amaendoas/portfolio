@@ -51,7 +51,7 @@ export function Contact() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAlertText('')
-    }, 3000)
+    }, 4000)
 
     return () => clearTimeout(timer)
   }, [alertText])
