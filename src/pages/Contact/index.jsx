@@ -22,28 +22,41 @@ export function Contact() {
   const [alertText, setAlertText] = useState("")
   const [alertSuccess, setAlertSuccess] = useState(false)
   const [showLoading, setShowLoading] = useState(false)
+  const [disabledField, setDisabledField] = useState(false)
 
   function showAlert(text, success = false) {
     setAlertText(text)
     setAlertSuccess(success)
   }
 
+  function resetFormFields(e) {
+    setName('')
+    setEmail('')
+    setMessage('')
+    e.target.reset()
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
     if(!name | !email | !message) {
+      console.log(name)
       showAlert(t("contactAlertMissing"))
     }
     else {
       setShowLoading(true)
+      setDisabledField(true)
       emailjs.sendForm('hotmailMessage', 'template_bjr3fv4', form.current, 'h-qEmow01mE_v9yMg')
         .then((result) => {
-            setShowLoading(false)
-            showAlert(t("contactAlertSuccess"), true)
+          setShowLoading(false)
+          resetFormFields(e)
+          showAlert(t("contactAlertSuccess"), true)
         }, (error) => {
-            setShowLoading(false)
-            showAlert(t("contactAlertError"))
-        });
-        e.target.reset();
+          setShowLoading(false)
+          showAlert(t("contactAlertError"))
+        })
+        .finally(() => {
+          setDisabledField(false)
+        })
     }
 
   };
@@ -73,12 +86,14 @@ export function Contact() {
             placeholder={t("contactName")}
             name="name"
             onChange={(e) => setName(e.target.value)}
+            disabled={disabledField}
             />
             <input
             type="email"
             placeholder={t("contactEmail")}
             name="email"
             onChange={(e) => setEmail(e.target.value)}
+            disabled={disabledField}
             />
             <textarea
             name="message"
@@ -86,6 +101,7 @@ export function Contact() {
             cols="30"
             rows="10" placeholder={t("contactMessage")}
             onChange={(e) => setMessage(e.target.value)}
+            disabled={disabledField}
             ></textarea>
             {
               showLoading

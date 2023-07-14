@@ -78,4 +78,8 @@ export const Form = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  input:disabled, textarea:disabled {
+    filter: brightness(0.9);
+  }
 `
