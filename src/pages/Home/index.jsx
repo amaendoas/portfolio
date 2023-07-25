@@ -2,7 +2,7 @@ import * as C from "./styles"
 import { Button } from "../../components/Button"
 import { Theme } from "../../components/Theme"
 import download from "../../assets/download.svg"
-import heart from "../../assets/home-heart.svg"
+import heart from "../../assets/pink-heart.svg"
 import stars from "../../assets/stars.svg"
 import star3 from "../../assets/star-3.svg"
 import star11 from "../../assets/star-11.svg"
@@ -10,10 +10,13 @@ import smile from "../../assets/smile-baloon.svg"
 import { Screen } from "../../components/Screen"
 import coding from "../../assets/coding.gif"
 import { useTranslation } from "react-i18next"
+import { useTheme } from "../../contexts/theme"
 
 
 export function Home() {
   const { t } = useTranslation();
+  const { theme } = useTheme();
+
   return(
     <Theme>
     <C.Container>

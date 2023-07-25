@@ -37,6 +37,7 @@ export default createGlobalStyle`
     border-bottom: 3px solid ${({theme}) => theme.COLORS.TEXT};
     margin-top: 1.2rem;
     padding: 1rem;
+    color: ${({ theme }) => theme.COLORS.TEXT};
   }
   
   input {

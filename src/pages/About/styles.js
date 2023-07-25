@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   grid-area: content;
   width: 100%;
+  height: 100%;
   flex-wrap: wrap;
   justify-content: center;
   animation: downtop 1s backwards;
@@ -42,7 +43,6 @@ export const Container = styled.div`
 
 export const Image = styled.div`
   margin-top: 7rem;
-  max-width: 80vw;
   width: 30rem;
   height: clamp(18rem, 18rem + 10vh, 30rem);
   background-image: url(${myPhoto});

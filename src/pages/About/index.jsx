@@ -34,7 +34,7 @@ export function About() {
           <p>{t("civilDegree")}</p>
           </div>
         </Screen>
-        <img src={balls} alt="balls" className="balls"/>
+        {/* <img src={balls} alt="balls" className="balls"/> */}
         <img src={smile} alt="smile" className="smile"/>
       </C.AboutMe>
     </C.Container>

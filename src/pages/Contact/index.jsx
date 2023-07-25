@@ -39,7 +39,6 @@ export function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     if(!name | !email | !message) {
-      console.log(name)
       showAlert(t("contactAlertMissing"))
     }
     else {
@@ -106,10 +105,10 @@ export function Contact() {
             {
               showLoading
               ?
-              <Button title={t("sending")} className="sending" disabled>
+              <Button title={t("sending")} className="sending" disabled btnColor="pink">
                 <ClipLoader color={({theme}) => theme.COLORS.TEXT} size={20}/>
               </Button>
-              : <Button icon={send} title={t("contactSend")} onCLick={sendEmail}/>
+              : <Button icon={send} title={t("contactSend")} onCLick={sendEmail} btnColor="pink"/>
             }
           </C.Form>
         </Screen>

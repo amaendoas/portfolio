@@ -4,7 +4,7 @@ export const dark = {
     NEUTRAL_700: "#0C0B07",
 
     BACKGROUND: "#1B1B1B",
-    TEXT: "#FFFFFFAA",
+    TEXT: "#F1F1F1",
 
     BLUE_P: "#63C7DD",
     BLUE_S: "#A6EDFD",
