@@ -9,30 +9,32 @@ export const Container = styled.div`
 `
 
 export const Title = styled.div`
-  position: relative;
+  /* position: relative; */
   width: 32rem;
+  display: flex;
+  gap: 2rem;
+
   .folders {
-    position: absolute;
-    bottom: 0;
+    margin-top: 2rem;
     width: 5rem;
-    right: 0;
     animation: downtop 1s backwards;
   }
 `
 export const Content = styled.div`
   display: flex;
   padding-bottom: 1rem;
-  max-width: 130rem;
+  max-width: 80vw;
   margin: 0 auto;
   flex-wrap: wrap;
   gap: 2rem;
-  height: 60vh;
+  max-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-y: auto;
   animation: downtop 1s backwards;
-
+  scrollbar-color: ${({ theme }) => theme.COLORS.PINK_S} ${({theme}) => theme.COLORS.NEUTRAL_700} !important;
+  scrollbar-width: thin;
   ::-webkit-scrollbar {
     width: 11px;
   }

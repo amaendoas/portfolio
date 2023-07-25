@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: 'FocusTimer',
     github: 'https://github.com/amaendoas/focus-timer-2',
-    finished: 'finished',
+    finished: true,
     date: '06/05/2022',
     tags: ['figma', 'html', 'css', 'javascript']
   },
@@ -11,7 +11,7 @@ export const projects = [
     id: 2,
     title: 'GitFav',
     github: 'https://github.com/amaendoas/github-favs',
-    finished: 'finished',
+    finished: true,
     date: '18/05/2022',
     tags: ['figma', 'html', 'css', 'javascript']
   },
@@ -19,7 +19,7 @@ export const projects = [
     id: 3,
     title: 'RocketNotes',
     github: 'https://github.com/amaendoas/rocket-notes-frontend',
-    finished: 'finished',
+    finished: true,
     live: 'https://myrocketnotes.netlify.app/',
     date: '27/05/2022',
     tags: ['figma', 'react', 'nodejs', 'sqlite']
@@ -27,7 +27,7 @@ export const projects = [
   {
     id: 4,
     title: 'RocketMovie',
-    finished: 'finished',
+    finished: true,
     github: 'https://github.com/amaendoas/rocket-movie-frontend',
     date: '06/06/2022',
     tags: ['figma', 'react', 'nodejs', 'sqlite']
@@ -35,7 +35,7 @@ export const projects = [
   {
     id: 5,
     title: 'StepDev',
-    finished: 'finished',
+    finished: true,
     github: 'https://github.com/amaendoas/stepdev-frontend',
     live: 'https://stepdev1.web.app/',
     date: '28/07/2022',
@@ -51,7 +51,7 @@ export const projects = [
   {
     id: 7,
     title: 'FoodExplorer',
-    finished: 'finished',
+    finished: true,
     github: 'https://github.com/amaendoas/food-explorer-backend',
     date: '26/08/2022',
     tags: ['figma', 'react', 'nodejs', 'sqlite']

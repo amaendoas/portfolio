@@ -10,6 +10,8 @@ export const Container = styled.div`
   animation: downtop 1s backwards;
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-color: ${({ theme }) => theme.COLORS.PINK_S} ${({theme}) => theme.COLORS.NEUTRAL_700} !important;
+  scrollbar-width: thin;
   
   ::-webkit-scrollbar {
         width: 11px;

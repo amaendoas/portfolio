@@ -2,7 +2,7 @@ import { useContext, createContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
 
-export function ThemeContextProvider({ children }) {
+function ThemeContextProvider({ children }) {
   const [theme, setTheme] = useState(localStorage.getItem('@theme') || 'light');
 
   function switchTheme() {
@@ -20,6 +20,8 @@ export function ThemeContextProvider({ children }) {
   );
 }
 
-export function useTheme() {
+function useTheme() {
   return useContext(ThemeContext);
 }
+
+export { useTheme, ThemeContextProvider }

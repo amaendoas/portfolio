@@ -5,7 +5,6 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: ${({ theme }) => theme.COLORS.TEXT};
   }
 
   :root {
@@ -20,6 +19,7 @@ export default createGlobalStyle`
     height: 100vh;
     background: linear-gradient(65.97deg, rgba(242, 139, 157, 0.4) -1.17%, rgba(178, 182, 244, 0.4) 47.65%, rgba(99, 199, 221, 0.4) 96.47%);
     font-family: 'JetBrains Mono', monospace;
+    color: ${({ theme }) => theme.COLORS.TEXT};
   }
 
   button {

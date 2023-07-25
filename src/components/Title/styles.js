@@ -6,8 +6,7 @@ export const Container = styled.div`
   border-width: 1px;
   border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND};;
-  margin-left: 2rem;
-  margin-top: 3rem;
+  margin: 2rem 0 0 2rem;
   animation: downtop 1s backwards;
 
   h1 {
