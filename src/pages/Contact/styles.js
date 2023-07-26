@@ -35,26 +35,6 @@ export const Content = styled.div`
     justify-content: center;
   }
 
-  button {
-    background-color: ${({ theme }) => theme.COLORS.PINK_S};
-  }
-
-  button:hover {
-    background-color: ${({ theme }) => theme.COLORS.PINK_P};
-  }
-
-  button.sending {
-    background-color: ${({ theme }) => theme.COLORS.PINK_P};
-
-    p {
-      margin-left: 5px;
-    }
-
-    :hover {
-      
-    }
-  }
-
   @media (min-width: 800px) {
     img.balloon{
       display: block;

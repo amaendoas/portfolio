@@ -1,11 +1,10 @@
 import * as C from "./styles"
-import {useState} from "react"
 import { StackItem } from "../../components/StackItem"
 import Carousel from "react-elastic-carousel"
 import { Theme } from "../../components/Theme"
 import { Title } from "../../components/Title"
 import star from "../../assets/star-smile.svg"
-import heart from "../../assets/heart.svg"
+import heart from "../../assets/purple-heart.svg"
 import { stack } from "../../utils/stack"
 import { useTranslation } from "react-i18next"
 

@@ -14,6 +14,6 @@ export const Container = styled.div`
   
   svg {
     font-size: 13px;
-    color: ${({theme, finished}) => finished ? theme.COLORS.GREEN : theme.COLORS.ORANGE}
+    color: ${({theme, finished}) => finished ? theme.COLORS.GREEN : theme.COLORS.ORANGE};
   }
 `

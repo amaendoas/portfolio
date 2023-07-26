@@ -8,7 +8,7 @@ export function Theme({children}) {
     <C.Container>
       <Header/>
       <SubHeader/>
-      {children}
+        {children}
       <Footer/>
     </C.Container>
   )

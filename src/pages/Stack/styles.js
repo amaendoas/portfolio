@@ -66,6 +66,7 @@ export const Container = styled.div`
   }
 
   .smile {
+    width: clamp(10rem, 10rem + 10vw, 12rem);
     top: -2rem;
     right: 0;
     z-index: 1;
@@ -96,7 +97,6 @@ export const Container = styled.div`
     }
 
     .smile {
-      width: 12rem;
       right: 1rem;
     }
 

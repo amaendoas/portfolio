@@ -7,8 +7,7 @@ export function Title({title}) {
       <span>&lsaquo;</span>
         {title}
       <span>/&rsaquo;</span>
-      </h1>
-      
+      </h1>   
     </C.Container>
   )
 }

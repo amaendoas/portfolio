@@ -19,6 +19,7 @@ export default createGlobalStyle`
     height: 100vh;
     background: linear-gradient(65.97deg, rgba(242, 139, 157, 0.4) -1.17%, rgba(178, 182, 244, 0.4) 47.65%, rgba(99, 199, 221, 0.4) 96.47%);
     font-family: 'JetBrains Mono', monospace;
+    color: ${({ theme }) => theme.COLORS.TEXT};
   }
 
   button {
@@ -36,6 +37,7 @@ export default createGlobalStyle`
     border-bottom: 3px solid ${({theme}) => theme.COLORS.TEXT};
     margin-top: 1.2rem;
     padding: 1rem;
+    color: ${({ theme }) => theme.COLORS.TEXT};
   }
   
   input {

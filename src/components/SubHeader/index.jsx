@@ -6,7 +6,7 @@ export function SubHeader() {
   return (
     <C.Container>
       <LanguageSwitch/>
-      {/* <ThemeSwitch/> */}
+      <ThemeSwitch/>
     </C.Container>
   )
 }

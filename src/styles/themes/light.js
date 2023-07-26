@@ -1,7 +1,6 @@
-export default {
+export const light = {
+  TITLE: 'light',
   COLORS: {
-    NEUTRAL_900: "#6F6B5F",
-    NEUTRAL_800: "#D5CFBA",
     NEUTRAL_700: "#F5F4F0",
 
     BACKGROUND: "#FFFFFF",
