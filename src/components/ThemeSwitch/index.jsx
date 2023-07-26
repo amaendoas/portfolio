@@ -9,7 +9,7 @@ export function ThemeSwitch() {
   return (
     <C.Container onClick={switchTheme}>
       { 
-        theme === 'light' ? <BiMoon size={20}/>: <BsSun size={20}/>
+        theme === 'light' ? <BsSun size={20}/>: <BiMoon size={20}/>
       }
     </C.Container>
   )
