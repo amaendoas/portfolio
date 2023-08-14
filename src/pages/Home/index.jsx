@@ -33,7 +33,7 @@ export function Home() {
                 <p>
                  { t("myNameIs") } <strong>Amanda Guerra</strong>, {t("iAm")} <u>{t("webDeveloper")}</u> {t("mainInterest")} <strong>front-end</strong> {t("and")} <strong>UX/UI</strong> design.
                 </p>
-                <a href="https://drive.google.com/u/0/uc?id=1Uw9UXIF2-ZxBWK11sjSHmeetO5gUOhRv&export=download" target="_blank">
+                <a href="https://www.canva.com/design/DAFriDO0igo/hibac47YNLjuIdb26Id9jA/view?utm_content=DAFriDO0igo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">
                 <Button icon={download} title={t("downloadText")}/>
                 </a>
             </C.PopUp>
