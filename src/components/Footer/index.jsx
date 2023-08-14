@@ -20,7 +20,7 @@ export function Footer() {
           <p className="showName">instagram</p>
         <span>/&rsaquo;</span>
           </a>
-        <a href="https://www.linkedin.com/in/guerramanda/" target='_blank'>
+        <a href="https://www.linkedin.com/in/amandaguerraa/" target='_blank'>
         <span>&lsaquo;</span>
           <SiLinkedin className="showIcon" size={15}/>
           <p className="showName">linkedin</p>

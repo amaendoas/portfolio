@@ -17,7 +17,8 @@ export const Main = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  gap: 5rem;
+  padding: 0 2rem;
 
   @media (max-width: 1000px) {
     gap: 3rem;
