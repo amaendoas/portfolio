@@ -1,6 +1,6 @@
 import * as C from "./styles"
 import { StackItem } from "../../components/StackItem"
-import Carousel from "react-elastic-carousel"
+
 import { Theme } from "../../components/Theme"
 import { Title } from "../../components/Title"
 import star from "../../assets/star-smile.svg"
@@ -27,7 +27,13 @@ export function Stack() {
             <img src={heart} alt="heart" className="heart" />
             <Carousel breakPoints={breakPoints}>
               {stack.map((item) => (
-                <StackItem key={item.id} title={item.title} icon={item.icon} color={item.color} value={item.value} />
+                <StackItem
+                  key={item.id}
+                  title={item.title}
+                  icon={item.icon}
+                  color={item.color}
+                  value={item.value}
+                />
               ))}
             </Carousel>
           </div>
