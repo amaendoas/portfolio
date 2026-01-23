@@ -1,18 +1,20 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import prettier from 'eslint-plugin-prettier'
-import pluginReact from 'eslint-plugin-react'
-import { defineConfig } from 'eslint/config'
+import js from "@eslint/js"
+import globals from "globals"
+import prettier from "eslint-plugin-prettier"
+import pluginReact from "eslint-plugin-react"
+import { defineConfig } from "eslint/config"
 
 export default defineConfig([
+  pluginReact.configs.flat.recommended,
+  js.configs.recommended,
   {
-    files: ['**/*.{js,mjs,cjs,jsx}'],
+    files: ["**/*.{js,mjs,cjs,jsx}"],
     languageOptions: {
       globals: globals.browser,
     },
     settings: {
       react: {
-        version: 'detect',
+        version: "detect",
       },
     },
     plugins: {
@@ -20,15 +22,9 @@ export default defineConfig([
       prettier,
     },
     rules: {
-      'react/react-in-jsx-scope': 'off',
-      'react/prop-types': 'off',
-      'prettier/prettier': 'error',
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "prettier/prettier": "error",
     },
   },
-
-  // React recommended rules
-  pluginReact.configs.flat.recommended,
-
-  // Disable ESLint rules that conflict with Prettier
-  js.configs.recommended,
 ])
