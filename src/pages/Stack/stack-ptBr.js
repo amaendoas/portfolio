@@ -1,5 +1,5 @@
 const stackPtBr = {
-  stackTitle: "Tecnologias"
+  stackTitle: "Tecnologias",
 }
 
 export default stackPtBr

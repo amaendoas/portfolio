@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 import cloudsImg from "../../assets/clouds.svg"
 import bgImg from "../../assets/bg.svg"
 import bgDark from "../../assets/bg-dark.svg"
@@ -6,7 +6,7 @@ import bgDark from "../../assets/bg-dark.svg"
 export const Container = styled.div`
   grid-area: content;
   height: 100%;
-  background-image: ${({theme}) => theme.TITLE === 'light' ? `url(${bgImg})` : `url(${bgDark})`};
+  background-image: ${({ theme }) => (theme.TITLE === "light" ? `url(${bgImg})` : `url(${bgDark})`)};
   background-repeat: repeat;
   background-position: center;
 `
@@ -25,8 +25,7 @@ export const Main = styled.main`
   }
 `
 
-export const Content = styled.div`
-` 
+export const Content = styled.div``
 
 export const PopUp = styled.div`
   margin: 0 3rem;
@@ -39,7 +38,7 @@ export const PopUp = styled.div`
   align-items: center;
   justify-content: center;
   h1 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
     font-size: 3rem;
     max-width: 300px;
     text-align: center;
@@ -47,73 +46,81 @@ export const PopUp = styled.div`
     padding-top: 2rem;
   }
 
-   p {
+  p {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.7rem;
     padding: 2rem 0;
     text-align: justify;
-   }
+  }
 
-   .heart1, .heart2, .stars, .star3, .star11 {
+  .heart1,
+  .heart2,
+  .stars,
+  .star3,
+  .star11 {
     position: absolute;
-   }
+  }
 
-   .heart1, .heart2 {
+  .heart1,
+  .heart2 {
     width: 3.5rem;
     animation: blink 1s 300ms steps(5, start) infinite;
-   }
-   
-   .heart1 {
+  }
+
+  .heart1 {
     left: 2rem;
     top: 7rem;
-   }
+  }
 
-   .heart2 {
+  .heart2 {
     right: 2rem;
     top: 7rem;
-   }
+  }
 
-   .stars {
+  .stars {
     right: -2rem;
     top: -2.5rem;
     width: 7rem;
-   }
+  }
 
-   .star3 {
+  .star3 {
     left: -1rem;
     bottom: -4rem;
     width: 7rem;
-   }
+  }
 
-   .star11 {
+  .star11 {
     right: -2rem;
     bottom: -3rem;
     width: 7rem;
-   }
+  }
 
   @media (min-width: 800px) {
     width: 40rem;
 
     h1 {
-    font-size: 3.5rem;
-    line-height: 3.7rem;
-    padding-top: 3rem;
-   }
+      font-size: 3.5rem;
+      line-height: 3.7rem;
+      padding-top: 3rem;
+    }
 
-   .heart1, .heart2 {
-    width: 4.8rem;
-   }
+    .heart1,
+    .heart2 {
+      width: 4.8rem;
+    }
 
-   .stars, .star3, .star11 {
-    width: 8rem;
-   }
+    .stars,
+    .star3,
+    .star11 {
+      width: 8rem;
+    }
 
-   p {
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    padding: 3rem 3rem 2rem;
-   }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      padding: 3rem 3rem 2rem;
+    }
   }
 `
 
@@ -137,7 +144,7 @@ export const Background = styled.div`
       width: clamp(30rem, 30rem + 10vw, 45rem);
       height: clamp(30rem, 30rem + 10vw, 45rem);
     }
-    
+
     img.smile {
       position: absolute;
       right: 20px;
@@ -156,11 +163,10 @@ export const Background = styled.div`
       visibility: hidden;
     }
   }
-  
+
   @-webkit-keyframes blink {
     to {
       visibility: hidden;
     }
   }
-
 `

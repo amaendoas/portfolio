@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   grid-area: subHeader;
@@ -12,9 +12,9 @@ export const Container = styled.div`
   right: 0;
   padding: 5px;
   margin: 1rem;
-  background-color: ${({theme}) => theme.COLORS.NEUTRAL_700};
-  border: 1px solid ${({theme}) => theme.COLORS.TEXT};
-  
+  background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
+  border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
+
   @media (min-width: 800px) {
     margin: 1rem 3rem;
   }

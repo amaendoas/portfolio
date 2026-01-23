@@ -3,7 +3,7 @@ const headerPtBR = {
   about: "sobre mim",
   stack: "tecnologias",
   projects: "projetos",
-  contact: "contato"
+  contact: "contato",
 }
 
 export default headerPtBR

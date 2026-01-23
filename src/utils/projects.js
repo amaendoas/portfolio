@@ -1,59 +1,59 @@
 export const projects = [
   {
     id: 1,
-    title: 'FocusTimer',
-    github: 'https://github.com/amaendoas/focus-timer-2',
+    title: "FocusTimer",
+    github: "https://github.com/amaendoas/focus-timer-2",
     finished: true,
-    date: '06/05/2022',
-    tags: ['figma', 'html', 'css', 'javascript']
+    date: "06/05/2022",
+    tags: ["figma", "html", "css", "javascript"],
   },
   {
     id: 2,
-    title: 'GitFav',
-    github: 'https://github.com/amaendoas/github-favs',
+    title: "GitFav",
+    github: "https://github.com/amaendoas/github-favs",
     finished: true,
-    date: '18/05/2022',
-    tags: ['figma', 'html', 'css', 'javascript']
+    date: "18/05/2022",
+    tags: ["figma", "html", "css", "javascript"],
   },
   {
     id: 3,
-    title: 'RocketNotes',
-    github: 'https://github.com/amaendoas/rocket-notes-frontend',
+    title: "RocketNotes",
+    github: "https://github.com/amaendoas/rocket-notes-frontend",
     finished: true,
-    live: 'https://myrocketnotes.netlify.app/',
-    date: '27/05/2022',
-    tags: ['figma', 'react', 'nodejs', 'sqlite']
+    live: "https://myrocketnotes.netlify.app/",
+    date: "27/05/2022",
+    tags: ["figma", "react", "nodejs", "sqlite"],
   },
   {
     id: 4,
-    title: 'RocketMovie',
+    title: "RocketMovie",
     finished: true,
-    github: 'https://github.com/amaendoas/rocket-movie-frontend',
-    date: '06/06/2022',
-    tags: ['figma', 'react', 'nodejs', 'sqlite']
+    github: "https://github.com/amaendoas/rocket-movie-frontend",
+    date: "06/06/2022",
+    tags: ["figma", "react", "nodejs", "sqlite"],
   },
   {
     id: 5,
-    title: 'StepDev',
+    title: "StepDev",
     finished: true,
-    github: 'https://github.com/amaendoas/stepdev-frontend',
-    live: 'https://stepdev1.web.app/',
-    date: '28/07/2022',
-    tags: ['figma', 'react', 'nodejs', 'firebase', 'typescript']
+    github: "https://github.com/amaendoas/stepdev-frontend",
+    live: "https://stepdev1.web.app/",
+    date: "28/07/2022",
+    tags: ["figma", "react", "nodejs", "firebase", "typescript"],
   },
   {
     id: 6,
-    title: 'Portfolio',
-    github: 'https://github.com/amaendoas/portfolio',
-    date: '12/08/2022',
-    tags: ['figma', 'html', 'react', 'javascript']
+    title: "Portfolio",
+    github: "https://github.com/amaendoas/portfolio",
+    date: "12/08/2022",
+    tags: ["figma", "html", "react", "javascript"],
   },
   {
     id: 7,
-    title: 'FoodExplorer',
+    title: "FoodExplorer",
     finished: true,
-    github: 'https://github.com/amaendoas/food-explorer-backend',
-    date: '26/08/2022',
-    tags: ['figma', 'react', 'nodejs', 'sqlite']
-  }
-];
+    github: "https://github.com/amaendoas/food-explorer-backend",
+    date: "26/08/2022",
+    tags: ["figma", "react", "nodejs", "sqlite"],
+  },
+]

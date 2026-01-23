@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   width: fit-content;
   padding: 0.5rem 2rem;
   border-width: 1px;
   border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   margin: 2rem 0 0 2rem;
   animation: downtop 1s backwards;
 

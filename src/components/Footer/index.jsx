@@ -1,37 +1,46 @@
-import * as C from "./styles"
-import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si"
 import { HiOutlineMail } from "react-icons/hi"
-import { useState } from "react"
-
-
+import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si"
+import * as C from "./styles"
 
 export function Footer() {
   return (
     <C.Container>
-        <a href="https://github.com/amaendoas" target='_blank'>
+      <a href="https://github.com/amaendoas" target="_blank" rel="noreferrer">
         <span>&lsaquo;</span>
-          <SiGithub className="showIcon" size={15}/>
-          <p className="showName">github</p>
+        <SiGithub className="showIcon" size={15} />
+        <p className="showName">github</p>
         <span>/&rsaquo;</span>
-          </a>
-        <a href="https://www.instagram.com/amaendoas" target='_blank'>
+      </a>
+      <a
+        href="https://www.instagram.com/amaendoas"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>&lsaquo;</span>
-          <SiInstagram className="showIcon" size={15}/>
-          <p className="showName">instagram</p>
+        <SiInstagram className="showIcon" size={15} />
+        <p className="showName">instagram</p>
         <span>/&rsaquo;</span>
-          </a>
-        <a href="https://www.linkedin.com/in/amandaguerraa/" target='_blank'>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/amandaguerraa/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>&lsaquo;</span>
-          <SiLinkedin className="showIcon" size={15}/>
-          <p className="showName">linkedin</p>
+        <SiLinkedin className="showIcon" size={15} />
+        <p className="showName">linkedin</p>
         <span>/&rsaquo;</span>
-          </a>
-        <a href="mailto:guerraamanda1@hotmail.com" target='_blank'>
+      </a>
+      <a
+        href="mailto:guerraamanda1@hotmail.com"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>&lsaquo;</span>
-        <HiOutlineMail className="showIcon" size={20}/>
+        <HiOutlineMail className="showIcon" size={20} />
         <p className="showName">email</p>
-          <span>/&rsaquo;</span>
-          </a>
+        <span>/&rsaquo;</span>
+      </a>
     </C.Container>
   )
 }

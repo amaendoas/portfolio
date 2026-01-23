@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Status } from "../Status/index.jsx"
 import { MdOutlineAccessTime } from "react-icons/md"
 
-export function Project({ title, tag, description, github, live, status, finished, date}) {
+export function Project({ title, tag, description, github, live, status, finished, date }) {
   const [isActive, setIsActive] = useState(true)
 
   function ShowHide() {
@@ -17,42 +17,33 @@ export function Project({ title, tag, description, github, live, status, finishe
     <C.Container>
       <C.Title>
         <h2>
-      <span>&lsaquo;</span>
+          <span>&lsaquo;</span>
           {title}
-      <span>/&rsaquo;</span>
+          <span>/&rsaquo;</span>
         </h2>
-        <button onClick={ShowHide}> 
-        {
-          isActive ? <MdOutlineKeyboardArrowUp/> : <MdOutlineKeyboardArrowDown/>
-        }
-        </button>
+        <button onClick={ShowHide}>{isActive ? <MdOutlineKeyboardArrowUp /> : <MdOutlineKeyboardArrowDown />}</button>
       </C.Title>
       <div className={`content ${isActive ? "active" : "inactive"}`}>
         <C.Content>
-          <p>
-          {description}
-          </p>
-            <C.Tags>
-            {tag}
-            </C.Tags>
+          <p>{description}</p>
+          <C.Tags>{tag}</C.Tags>
           <C.Footer>
             <C.Links>
               <C.Info>
                 <p>
-                <MdOutlineAccessTime className="time"/>
+                  <MdOutlineAccessTime className="time" />
                   {date}
                 </p>
-                <Status status={status} finished={finished}/>
+                <Status status={status} finished={finished} />
               </C.Info>
-            <a href={github} target="_blank">
-              <BsGithub size={25}/>
-            </a>
-            {
-              live &&
-            <a href={live} target="_blank">
-              <MdLanguage size={25}/>
-            </a>
-            }
+              <a href={github} target="_blank" rel="noreferrer">
+                <BsGithub size={25} />
+              </a>
+              {live && (
+                <a href={live} target="_blank" rel="noreferrer">
+                  <MdLanguage size={25} />
+                </a>
+              )}
             </C.Links>
           </C.Footer>
         </C.Content>

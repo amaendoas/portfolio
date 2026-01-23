@@ -1,5 +1,5 @@
 const languageSwitchPtBR = {
-  chooseLanguage: "Escolha o idioma"
+  chooseLanguage: "Escolha o idioma",
 }
 
 export default languageSwitchPtBR

@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from "styled-components"
 
 export const Container = styled.div`
   gap: 7rem;
@@ -10,7 +9,7 @@ export const Container = styled.div`
   .carousel-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     width: 34rem;
     position: relative;
     animation: downtop 1s backwards;
@@ -29,27 +28,28 @@ export const Container = styled.div`
     justify-content: center;
   }
 
-  .rec-arrow:hover:enabled, .rec-arrow:focus {
-    color: ${({theme}) => theme.COLORS.TEXT};
+  .rec-arrow:hover:enabled,
+  .rec-arrow:focus {
+    color: ${({ theme }) => theme.COLORS.TEXT};
     background-color: transparent;
-    box-shadow: 0 0 2px 0 ${({theme}) => theme.COLORS.TEXT};
+    box-shadow: 0 0 2px 0 ${({ theme }) => theme.COLORS.TEXT};
   }
 
- .rec-dot_active {
-  background-color: rgba(148,240,215,.5);
-  box-shadow: 0 0 1px 2px ${({theme}) => theme.COLORS.TEXT};
- }
+  .rec-dot_active {
+    background-color: rgba(148, 240, 215, 0.5);
+    box-shadow: 0 0 1px 2px ${({ theme }) => theme.COLORS.TEXT};
+  }
 
- .rec-carousel {
-  height: 32rem !important;
-  width: 33rem;
- }
+  .rec-carousel {
+    height: 32rem !important;
+    width: 33rem;
+  }
 
   .rec-dot:hover {
-    box-shadow: 0 0 1px 3px ${({theme}) => theme.COLORS.GREEN_P};
+    box-shadow: 0 0 1px 3px ${({ theme }) => theme.COLORS.GREEN_P};
   }
 
-  .rec-slider-container{
+  .rec-slider-container {
     margin: 0;
   }
 
@@ -61,7 +61,8 @@ export const Container = styled.div`
     width: 27rem !important;
   }
 
-  .smile, .heart {
+  .smile,
+  .heart {
     position: absolute;
   }
 
@@ -104,7 +105,6 @@ export const Container = styled.div`
       width: 7rem;
       left: 4rem;
     }
-
   }
 `
 

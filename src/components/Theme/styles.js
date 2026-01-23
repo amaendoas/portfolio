@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-export const Container = styled.div `
+export const Container = styled.div`
   height: 100vh;
   width: 100%;
   display: grid;
   grid-template-rows: 52px min-content auto 38px;
   grid-template-areas:
-  "header"
-  "subHeader"
-  "content"
-  "footer";
+    "header"
+    "subHeader"
+    "content"
+    "footer";
   overflow-x: hidden;
   overflow-y: hidden;
 
@@ -27,7 +27,7 @@ export const Container = styled.div `
 
   @keyframes buttonD {
     0% {
-      transform: translate(0,0);
+      transform: translate(0, 0);
     }
 
     100% {

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const LanguageBtn = styled.button`
   width: fit-content;
@@ -7,7 +7,7 @@ export const LanguageBtn = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   img {
     width: 2.5rem;
   }

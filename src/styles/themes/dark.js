@@ -1,5 +1,5 @@
 export const dark = {
-  TITLE: 'dark',
+  TITLE: "dark",
   COLORS: {
     NEUTRAL_700: "#0C0B07",
 
@@ -23,6 +23,6 @@ export const dark = {
 
     RED: "#AB222E",
     ORANGE: "#FBA94C",
-    GREEN: "#04D361"
-  }
+    GREEN: "#04D361",
+  },
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 import bgImg from "../../assets/bg-conffeti.svg"
 
 export const Container = styled.div`
@@ -36,7 +36,7 @@ export const Content = styled.div`
   }
 
   @media (min-width: 800px) {
-    img.balloon{
+    img.balloon {
       display: block;
       position: absolute;
       bottom: -6rem;
@@ -44,10 +44,10 @@ export const Content = styled.div`
     }
 
     img.clouds {
-    top: -5rem;
-    right: -5rem;
-    width: 14rem;
-    height: 9rem;
+      top: -5rem;
+      right: -5rem;
+      width: 14rem;
+      height: 9rem;
     }
   }
 `
@@ -59,7 +59,8 @@ export const Form = styled.form`
   align-items: center;
   justify-content: center;
 
-  input:disabled, textarea:disabled {
+  input:disabled,
+  textarea:disabled {
     filter: brightness(0.9);
   }
 `

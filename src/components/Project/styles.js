@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   width: 34rem;
-  background-color: ${({theme}) => theme.COLORS.BACKGROUND};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   padding: 1.3rem 2rem;
-  border: 1px solid ${({theme}) => theme.COLORS.TEXT};
-  box-shadow: 4px 4px 0px ${({theme}) => theme.COLORS.TEXT};
+  border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
+  box-shadow: 4px 4px 0px ${({ theme }) => theme.COLORS.TEXT};
   border-radius: 10px;
-  
+
   p {
     width: 100%;
     font-weight: 400;
@@ -34,7 +34,7 @@ export const Title = styled.div`
   span {
     font-size: 1.8rem;
     font-weight: 700;
-    color: ${({theme}) => theme.COLORS.PINK_P};
+    color: ${({ theme }) => theme.COLORS.PINK_P};
   }
 
   h2 {
@@ -47,7 +47,7 @@ export const Title = styled.div`
     border: none;
     svg {
       font-size: 3rem;
-      color: ${({theme}) => theme.COLORS.PINK_P};
+      color: ${({ theme }) => theme.COLORS.PINK_P};
     }
   }
 `
@@ -71,13 +71,13 @@ export const Footer = styled.div`
 `
 
 export const Tags = styled.div`
- display: flex;
- gap: 8px;
- flex-wrap: wrap;
- align-items: center;
- justify-content: space-between;
- width: 100%;
- `
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`
 
 export const Links = styled.div`
   width: 100%;
@@ -85,16 +85,16 @@ export const Links = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
-  
+
   a:nth-child(1) {
     margin-right: 8px;
   }
-  
+
   a {
     svg {
-     color: ${({theme}) => theme.COLORS.PINK_P};
-     transition: 0.3s;
-   }
+      color: ${({ theme }) => theme.COLORS.PINK_P};
+      transition: 0.3s;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@ export const Links = styled.div`
 
   a:hover {
     svg {
-      color: ${({theme}) => theme.COLORS.BLUE_P};
+      color: ${({ theme }) => theme.COLORS.BLUE_P};
       transition: 0.3s;
     }
   }

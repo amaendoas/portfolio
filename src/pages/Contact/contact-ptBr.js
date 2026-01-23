@@ -7,7 +7,7 @@ const contactPtBr = {
   contactAlertMissing: "Por favor preencha todos os campos!",
   contactAlertSuccess: "Obrigada pela mensagem!",
   contactAlertError: "Não foi possível enviar sua mensagem, tente novamente mais tarde.",
-  sending: "enviando..."
+  sending: "enviando...",
 }
 
 export default contactPtBr

@@ -5,9 +5,9 @@ import { languages } from "./translations"
 i18n.use(initReactI18next).init({
   fallbackLng: "ptBr",
   interpolation: {
-    escapeValue: false
+    escapeValue: false,
   },
-  resources: languages
+  resources: languages,
 })
 
 export default i18n

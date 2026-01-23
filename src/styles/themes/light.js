@@ -1,5 +1,5 @@
 export const light = {
-  TITLE: 'light',
+  TITLE: "light",
   COLORS: {
     NEUTRAL_700: "#F5F4F0",
 
@@ -23,7 +23,6 @@ export const light = {
 
     RED: "#AB222E",
     ORANGE: "#FBA94C",
-    GREEN: "#04D361"
-
-  }
+    GREEN: "#04D361",
+  },
 }

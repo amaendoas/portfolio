@@ -1,10 +1,10 @@
 import * as C from "./styles"
 import { BsCircleFill } from "react-icons/bs"
 
-export function Status({status, finished}) {
+export function Status({ status, finished }) {
   return (
     <C.Container finished={finished}>
-      <BsCircleFill/>
+      <BsCircleFill />
       <span>{status}</span>
     </C.Container>
   )

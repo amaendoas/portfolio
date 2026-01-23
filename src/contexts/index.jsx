@@ -1,9 +1,5 @@
-import { ThemeContextProvider } from './theme';
+import { ThemeContextProvider } from "./theme"
 
 export function AppContextProvider({ children }) {
-  return (
-    <ThemeContextProvider>
-      {children}
-    </ThemeContextProvider>
-  );
+  return <ThemeContextProvider>{children}</ThemeContextProvider>
 }

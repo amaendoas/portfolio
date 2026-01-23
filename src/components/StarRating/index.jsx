@@ -1,16 +1,12 @@
-import { Container } from "./styles";
+import { Container } from "./styles"
 import starRate from "../../assets/star-rate.svg"
 
-
-export function StarRating({value = 0, ...rest}) {
+export function StarRating({ value = 0 }) {
   return (
     <Container>
       {[...Array(value)].map((index) => {
-        return(
-          <img src={starRate} alt="" className="star" key={index}/>
-        )
-      }
-      )}
+        return <img src={starRate} alt="" className="star" key={index} />
+      })}
     </Container>
   )
 }

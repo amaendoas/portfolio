@@ -7,10 +7,6 @@ export function ThemeSwitch() {
   const { theme, switchTheme } = useTheme()
 
   return (
-    <C.Container onClick={switchTheme}>
-      { 
-        theme === 'light' ? <BsSun size={20}/>: <BiMoon size={20}/>
-      }
-    </C.Container>
+    <C.Container onClick={switchTheme}>{theme === "light" ? <BsSun size={20} /> : <BiMoon size={20} />}</C.Container>
   )
 }

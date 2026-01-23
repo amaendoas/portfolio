@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
   * {
@@ -32,9 +32,9 @@ export default createGlobalStyle`
   input, textarea {
     font-family: 'JetBrains Mono', monospace;
     width: 100%;
-    background-color: ${({theme}) => theme.COLORS.NEUTRAL_700};
+    background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
     border: none;
-    border-bottom: 3px solid ${({theme}) => theme.COLORS.TEXT};
+    border-bottom: 3px solid ${({ theme }) => theme.COLORS.TEXT};
     margin-top: 1.2rem;
     padding: 1rem;
     color: ${({ theme }) => theme.COLORS.TEXT};
@@ -51,7 +51,7 @@ export default createGlobalStyle`
   }
 
   button, a {
-    color: ${({theme}) => theme.COLORS.TEXT};
+    color: ${({ theme }) => theme.COLORS.TEXT};
   }
 
   a {

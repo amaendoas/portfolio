@@ -1,8 +1,7 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from "styled-components"
 
 export const Container = styled.button`
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   height: 3.2rem;
   width: fit-content;
   padding: 0 5px;
@@ -15,5 +14,4 @@ export const Container = styled.button`
   span {
     color: ${({ theme }) => theme.COLORS.PINK_P};
   }
-
 `

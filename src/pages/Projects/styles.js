@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const Container = styled.div`
   grid-area: content;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem; 
+  gap: 3rem;
 `
 
 export const Title = styled.div`
@@ -33,7 +33,7 @@ export const Content = styled.div`
   justify-content: center;
   overflow-y: auto;
   animation: downtop 1s backwards;
-  scrollbar-color: ${({ theme }) => theme.COLORS.PINK_S} ${({theme}) => theme.COLORS.NEUTRAL_700} !important;
+  scrollbar-color: ${({ theme }) => theme.COLORS.PINK_S} ${({ theme }) => theme.COLORS.NEUTRAL_700} !important;
   scrollbar-width: thin;
   ::-webkit-scrollbar {
     width: 11px;

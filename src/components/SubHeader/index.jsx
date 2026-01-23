@@ -5,8 +5,8 @@ import * as C from "./styles"
 export function SubHeader() {
   return (
     <C.Container>
-      <LanguageSwitch/>
-      <ThemeSwitch/>
+      <LanguageSwitch />
+      <ThemeSwitch />
     </C.Container>
   )
 }

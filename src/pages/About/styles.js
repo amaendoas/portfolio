@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 import myPhoto from "../../assets/photo.jpg"
 
 export const Container = styled.div`
@@ -11,13 +11,13 @@ export const Container = styled.div`
   animation: downtop 1s backwards;
   overflow-x: hidden;
   overflow-y: auto;
-  scrollbar-color: ${({ theme }) => theme.COLORS.PINK_S} ${({theme}) => theme.COLORS.NEUTRAL_700} !important;
+  scrollbar-color: ${({ theme }) => theme.COLORS.PINK_S} ${({ theme }) => theme.COLORS.NEUTRAL_700} !important;
   scrollbar-width: thin;
-  
+
   ::-webkit-scrollbar {
-        width: 11px;
-      }
-    
+    width: 11px;
+  }
+
   ::-webkit-scrollbar-track {
     border-radius: 10px;
     background: ${({ theme }) => theme.COLORS.NEUTRAL_700};
@@ -56,21 +56,19 @@ export const Image = styled.div`
   }
 
   @media (min-width: 900px) {
-  width: 35rem;
-   height: 35rem;
+    width: 35rem;
+    height: 35rem;
   }
 `
 export const Stickers = styled.div`
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    top: -60px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: -60px;
 
-    
-    div {
+  div {
     position: relative;
-    
 
     p {
       position: absolute;
@@ -81,15 +79,15 @@ export const Stickers = styled.div`
       line-height: 18px;
       text-align: center;
       letter-spacing: -0.05rem;
-      color: ${({theme}) => theme.COLORS.BACKGROUND};
+      color: ${({ theme }) => theme.COLORS.BACKGROUND};
       -webkit-text-stroke-width: 0.8px;
-      -webkit-text-stroke-color: ${({theme}) => theme.COLORS.TEXT};
-      text-shadow: 3px 3px 0px ${({theme}) => theme.COLORS.GREEN_S};
+      -webkit-text-stroke-color: ${({ theme }) => theme.COLORS.TEXT};
+      text-shadow: 3px 3px 0px ${({ theme }) => theme.COLORS.GREEN_S};
       transform: rotate(9deg);
       bottom: 20px;
       left: 15px;
-      }
     }
+  }
 
   .balloon {
     z-index: 1;
@@ -103,8 +101,8 @@ export const Stickers = styled.div`
       width: 14rem;
       height: 12rem;
     }
-    }
-  
+  }
+
   @media (min-width: 900px) {
     top: -95px;
     .balloon {
@@ -124,8 +122,8 @@ export const Stickers = styled.div`
     }
 
     .tag {
-        width: 20rem;
-        height: 20rem;
+      width: 20rem;
+      height: 20rem;
 
       svg {
         width: 24rem;
@@ -147,11 +145,11 @@ export const AboutMe = styled.div`
     padding: 1rem 1rem 0;
 
     span {
-      color: ${({theme}) => theme.COLORS.PINK_P};
+      color: ${({ theme }) => theme.COLORS.PINK_P};
     }
   }
 
-   .description {
+  .description {
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -161,50 +159,49 @@ export const AboutMe = styled.div`
     p {
       margin-bottom: 5px;
     }
-   }
+  }
 
-   img.balls {
+  img.balls {
     position: absolute;
     bottom: -60px;
     left: -25px;
     z-index: -1;
-   }
+  }
 
-   img.smile {
+  img.smile {
     position: absolute;
     top: -40px;
     right: -40px;
-   }
+  }
 
-   @media (min-width: 700px) {
+  @media (min-width: 700px) {
     padding: 0 3rem;
 
     img.smile {
-    right: -15px;
-   }
+      right: -15px;
+    }
   }
 
   @media (min-width: 900px) {
-    
     img.balls {
       width: 11rem;
       left: 0px;
       bottom: -50px;
-   }
-
-   h1 {
-    font-size: 2.8rem;
-    padding: 2rem 2rem 0;
-  }
-
-  .description {
-    font-size: 1.6rem;
-    line-height: 2rem;
-    padding: 2rem 2rem 5rem;
-    
-    p {
-      margin-bottom: 1rem;
     }
-  }
+
+    h1 {
+      font-size: 2.8rem;
+      padding: 2rem 2rem 0;
+    }
+
+    .description {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      padding: 2rem 2rem 5rem;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
   }
 `

@@ -3,7 +3,7 @@ const headerEng = {
   about: "about",
   stack: "stack",
   projects: "projects",
-  contact: "contact"
+  contact: "contact",
 }
 
 export default headerEng

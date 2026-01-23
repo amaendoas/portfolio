@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   position: absolute;
@@ -17,8 +17,8 @@ export const Wrapper = styled.div`
   gap: 1rem;
   width: fit-content;
   height: 4rem;
-  background-color: ${({theme}) => theme.COLORS.NEUTRAL_700};
-  border: 1px solid ${({theme}) => theme.COLORS.TEXT};
+  background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
+  border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
   padding: 0 1.5rem;
   p {
     font-size: clamp(1rem, 1rem + 5vw, 1.4rem);
@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
     width: 1rem;
   }
   svg {
-    color: ${({theme}) => theme.COLORS.PINK_P};
+    color: ${({ theme }) => theme.COLORS.PINK_P};
   }
 
   @keyframes topdown {
@@ -42,5 +42,4 @@ export const Wrapper = styled.div`
       opacity: 1;
     }
   }
-
 `

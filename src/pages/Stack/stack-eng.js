@@ -1,5 +1,5 @@
 const stackEng = {
-  stackTitle: "Stack"
+  stackTitle: "Stack",
 }
 
 export default stackEng
